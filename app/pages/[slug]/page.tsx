@@ -18,6 +18,7 @@ export async function generateMetadata({
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const page = await getPageBySlug(params.slug);
+  console.log(page)
 
   return (
     <Section>

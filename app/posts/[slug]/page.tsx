@@ -28,8 +28,7 @@ export async function generateMetadata({
 export default async function Page({ params }: { params: { slug: string } }) {
   const post = await getPostBySlug(params.slug);
   const featuredMedia = await getFeaturedMediaById(post.featured_media);
-  const author = await getAuthorById(post.author);
-  const date = new Date(post.date).toLocaleDateString("en-US", {
+  const date = new Date(post.date).toLocaleDateString("es-AR", {
     month: "long",
     day: "numeric",
     year: "numeric",
@@ -49,12 +48,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
         <div className="flex justify-between items-center gap-4 text-sm mb-4">
           <h5>
-            Published {date} by{" "}
-            {author.name && (
-              <span>
-                <a href={`/posts/?author=${author.id}`}>{author.name}</a>{" "}
-              </span>
-            )}
+            Publicado el {date}
           </h5>
           <Link
             href={`/posts/?category=${category.id}`}
@@ -71,7 +65,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             alt={post.title.rendered}
           />
         </div>
-        <Article dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+        <Article className="m-auto" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
       </Container>
     </Section>
   );

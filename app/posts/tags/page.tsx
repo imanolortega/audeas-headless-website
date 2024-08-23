@@ -6,8 +6,8 @@ import BackButton from "@/components/back";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "All Tags",
-    description: "Browse all tags on the site.",
+    title: "Todas las etiquetas",
+    description: "Explorar todas las etiquetas en el sitio.",
   };
 }
 
@@ -18,7 +18,7 @@ export default async function Page() {
     <Section>
       <Container>
         <BackButton />
-        <h2>All Tags</h2>
+        <h2>Todas las etiquetas</h2>
         <div className="grid">
           {tags.map((tag: any) => (
             <Link key={tag.id} href={`/posts/?tag=${tag.id}`}>

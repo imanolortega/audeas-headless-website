@@ -11,7 +11,6 @@ import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { Main } from "@/components/craft";
 import { mainMenu, contentMenu } from "@/menu.config";
 import { Section, Container } from "@/components/craft";
-import Balancer from "react-wrap-balancer";
 
 import Logo from "@/public/logo.svg";
 
@@ -127,9 +126,6 @@ const Footer = () => {
                 className="dark:invert hover:opacity-75 transition-all"
               ></Image>
             </Link>
-            <p>
-              <Balancer>{metadata.description}</Balancer>
-            </p>
           </div>
           <div className="flex flex-col gap-2 text-sm">
             <h5 className="font-medium text-base">Website</h5>
@@ -159,8 +155,7 @@ const Footer = () => {
         <Container className="border-t not-prose flex flex-col md:flex-row md:gap-2 gap-6 justify-between md:items-center">
           <ThemeToggle />
           <p className="text-muted-foreground">
-            © <a href="https://9d8.dev">9d8</a>. All rights reserved.
-            2024-present.
+            © 2024. Audeas | Asociación Civil.
           </p>
         </Container>
       </Section>

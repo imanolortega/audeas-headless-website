@@ -6,8 +6,8 @@ import BackButton from "@/components/back";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "All Categories",
-    description: "Browse all categories on the site.",
+    title: "Todas las categorías",
+    description: "Explorar todas las categorías.",
   };
 }
 
@@ -18,7 +18,7 @@ export default async function Page() {
     <Section>
       <Container>
         <BackButton />
-        <h2>All Categories</h2>
+        <h2>Todas las categorías</h2>
         <div className="grid">
           {categories.map((category: any) => (
             <Link key={category.id} href={`/posts/?category=${category.id}`}>

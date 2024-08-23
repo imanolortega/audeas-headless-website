@@ -8,9 +8,9 @@ export default async function Page() {
   return (
     <Section>
       <Container>
-        <h1>Pages</h1>
+        <h1>Páginas</h1>
 
-        <h2>All Pages</h2>
+        <h2>Todas las páginas</h2>
         <div className="grid">
           {pages.map((page: any) => (
             <Link key={page.id} href={`pages/${page.slug}`}>

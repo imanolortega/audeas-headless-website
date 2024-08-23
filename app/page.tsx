@@ -25,31 +25,11 @@ const ExampleJsx = () => {
     <article className="prose-m-none">
       <h1>
         <Balancer>
-          Hello World, welcome to the Next.js and WordPress Starter by{" "}
-          <a href="https://9d8.dev">9d8</a>.
+          Next.js and WordPress Starter
         </Balancer>
       </h1>
-      {/* Vercel Clone Starter */}
-      <a
-        className="h-16 block"
-        href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F9d8dev%2Fnext-wp&env=WORDPRESS_URL,WORDPRESS_HOSTNAME&envDescription=Add%20WordPress%20URL%20with%20Rest%20API%20enabled%20(ie.%20https%3A%2F%2Fwp.example.com)%20abd%20the%20hostname%20for%20Image%20rendering%20in%20Next%20JS%20(ie.%20wp.example.com)&project-name=next-wp&repository-name=next-wp&demo-title=Next%20JS%20and%20WordPress%20Starter&demo-url=https%3A%2F%2Fwp.9d8.dev"
-      >
-        {/* eslint-disable-next-line */}
-        <img
-          className="not-prose my-4"
-          src="https://vercel.com/button"
-          alt="Deploy with Vercel"
-        />
-      </a>
       <p>
-        This is <a href="https://github.com/9d8dev/next-wp">next-wp</a>, created
-        as a way to build WordPress sites with Next.js at rapid speed. This
-        starter is designed with <a href="https://ui.shadcn.com">shadcn/ui</a>,{" "}
-        <a href="https://github.com/brijr/craft">brijr/craft</a>, and Tailwind
-        CSS. Use <a href="https://components.bridger.to">brijr/components</a> to
-        build your site with prebuilt components. The data fetching and
-        typesafety is handled in <code>lib/WordPress.ts</code> and{" "}
-        <code>lib/WordPress.d.ts</code>. Questions? Email 9d8dev@gmail.com
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <div className="grid md:grid-cols-3 gap-4 mt-6 not-prose">
         <Link
@@ -58,9 +38,9 @@ const ExampleJsx = () => {
         >
           <Pen size={32} />
           <span>
-            Posts{" "}
+            Noticias{" "}
             <span className="block text-sm text-muted-foreground">
-              All posts from your WordPress
+              Últimas publicaciones de Audeas
             </span>
           </span>
         </Link>
@@ -70,9 +50,9 @@ const ExampleJsx = () => {
         >
           <File size={32} />
           <span>
-            Pages{" "}
+            Páginas{" "}
             <span className="block text-sm text-muted-foreground">
-              Custom pages from your WordPress
+              Todas las páginas
             </span>
           </span>
         </Link>
@@ -82,9 +62,9 @@ const ExampleJsx = () => {
         >
           <User size={32} />
           <span>
-            Authors{" "}
+            Autores{" "}
             <span className="block text-sm text-muted-foreground">
-              List of the authors from your WordPress
+              Lista de los autores
             </span>
           </span>
         </Link>
@@ -96,7 +76,7 @@ const ExampleJsx = () => {
           <span>
             Tags{" "}
             <span className="block text-sm text-muted-foreground">
-              Content by tags from your WordPress
+              Contenido por etiquetas
             </span>
           </span>
         </Link>
@@ -106,9 +86,9 @@ const ExampleJsx = () => {
         >
           <Boxes size={32} />
           <span>
-            Categories{" "}
+            Categorías{" "}
             <span className="block text-sm text-muted-foreground">
-              Categories from your WordPress
+              Lista de categorías
             </span>
           </span>
         </Link>
@@ -118,9 +98,9 @@ const ExampleJsx = () => {
         >
           <Folder size={32} />
           <span>
-            Documentation{" "}
+            Documentación útil{" "}
             <span className="block text-sm text-muted-foreground">
-              How to use `next-wp`
+              Todos los documentos
             </span>
           </span>
         </a>

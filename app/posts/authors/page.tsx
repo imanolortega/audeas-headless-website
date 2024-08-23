@@ -6,8 +6,8 @@ import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "All Authors",
-    description: "Browse all authors on the site.",
+    title: "Todos los autores",
+    description: "Explorar todos los autores en el sitio.",
   };
 }
 
