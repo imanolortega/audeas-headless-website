@@ -6,7 +6,7 @@ export const mainMenu = {
 };
 
 export const contentMenu = {
-  categories: "/posts/categories",
-  tags: "/posts/tags",
-  authors: "/posts/authors",
+  categorías: "/posts/categories",
+  etiquetas: "/posts/tags",
+  autores: "/posts/authors",
 };

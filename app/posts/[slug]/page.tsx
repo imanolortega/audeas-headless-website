@@ -45,7 +45,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
             ></span>
           </Balancer>
         </h1>
-
         <div className="flex justify-between items-center gap-4 text-sm mb-4">
           <h5>
             Publicado el {date}
@@ -57,7 +56,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             {category.name}
           </Link>
         </div>
-        <div className="h-96 my-12 md:h-[560px] overflow-hidden flex items-center justify-center border rounded-lg bg-accent/25">
+        <div className="h-96 my-10 md:h-[560px] overflow-hidden flex items-center justify-center border rounded-lg bg-accent/25">
           {/* eslint-disable-next-line */}
           <img
             className="w-full"
