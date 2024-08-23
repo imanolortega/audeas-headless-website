@@ -237,3 +237,16 @@ type FilterBarProps = {
   selectedTag?: string;
   selectedCategory?: string;
 };
+
+type Item = {
+  title: string;
+  ID: number;
+  url: string;
+}
+
+export type Menu = {
+  ID: number;
+  name: string;
+  slug: string;
+  items: Item[]
+}

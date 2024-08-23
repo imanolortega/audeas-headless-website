@@ -1,0 +1,62 @@
+import Image from "next/image";
+import Link from "next/link";
+
+import { cn } from "@/lib/utils";
+
+import Logo from "@/public/logo.svg";
+import { Button } from "../ui/button";
+import { MobileNav } from "./mobile-nav";
+import { getMenuBySlug } from "@/lib/wordpress";
+
+export const Nav = async ({ className, children, id }: NavProps) => {
+  const mainMenu = await getMenuBySlug('main')
+  const items = mainMenu.items
+  console.log(items)
+
+  return (
+    <nav
+      className={cn(
+        "sticky z-50 top-0 bg-background",
+        "border-b",
+        "fade-in",
+        className,
+      )}
+      id={id}
+    >
+      <div
+        id="nav-container"
+        className="max-w-5xl mx-auto py-4 px-6 sm:px-8 flex justify-between items-center"
+      >
+        <Link
+          className="hover:opacity-75 transition-all flex gap-2 items-center"
+          href="/"
+        >
+          <h2 className="sr-only">next-wp starter</h2>
+          <Image
+            src={Logo}
+            alt="Logo"
+            className="dark:invert"
+            width={84}
+            height={30.54}
+          ></Image>
+        </Link>
+        {children}
+        <div className="flex items-center gap-2">
+          <div className="mx-2 hidden md:flex">
+            {items.map(({ID, title, url}) => (
+              <Button key={ID} asChild variant="ghost" size="sm">
+                <Link href={url}>
+                  {title}
+                </Link>
+              </Button>
+            ))}
+          </div>
+          <Button asChild className="hidden sm:flex">
+            <Link href="/">Recursos</Link>
+          </Button>
+          <MobileNav />
+        </div>
+      </div>
+    </nav>
+  );
+};

@@ -1,7 +1,7 @@
 // Define the menu items
 export const mainMenu = {
   inicio: "/",
-  nosotros: "/pages/about",
+  nosotros: "/pages/sample-page",
   blog: "/posts",
 };
 

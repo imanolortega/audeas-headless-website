@@ -11,6 +11,7 @@ import {
   Page,
   Author,
   FeaturedMedia,
+  Menu,
 } from "./wordpress.d";
 
 // WordPress Config
@@ -19,7 +20,7 @@ const baseUrl = process.env.WORDPRESS_URL;
 
 function getUrl(path: string, query?: Record<string, any>) {
     const params = query ? querystring.stringify(query) : null
-  
+
     return `${baseUrl}${path}${params ? `?${params}` : ""}`
 }
 
@@ -29,7 +30,7 @@ export async function getAllPosts(filterParams?: {
   author?: string;
   tag?: string;
   category?: string;
-}): Promise<Post[]> {  
+}): Promise<Post[]> {
   const url = getUrl("/wp-json/wp/v2/posts", { author: filterParams?.author, tags: filterParams?.tag, categories: filterParams?.category });
   const response = await fetch(url);
   const posts: Post[] = await response.json();
@@ -195,4 +196,11 @@ export async function getFeaturedMediaById(id: number): Promise<FeaturedMedia> {
   const response = await fetch(url);
   const featuredMedia: FeaturedMedia = await response.json();
   return featuredMedia;
+}
+
+export async function getMenuBySlug(slug: string): Promise<Menu> {
+  const url = getUrl(`/wp-json/wp/v2/menus/${slug}`);
+  const response = await fetch(url);
+  const menu: Menu = await response.json();
+  return menu;
 }
