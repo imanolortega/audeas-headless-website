@@ -74,6 +74,10 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  figure {
+    @apply flex gap-4;
+  }
 }
 
 @layer prose-m-none {

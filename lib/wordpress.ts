@@ -16,7 +16,7 @@ import {
 
 // WordPress Config
 
-const baseUrl = process.env.WORDPRESS_URL;
+export const baseUrl = process.env.WORDPRESS_URL;
 
 function getUrl(path: string, query?: Record<string, any>) {
     const params = query ? querystring.stringify(query) : null
@@ -202,5 +202,7 @@ export async function getMenuBySlug(slug: string): Promise<Menu> {
   const url = getUrl(`/wp-json/wp/v2/menus/${slug}`);
   const response = await fetch(url);
   const menu: Menu = await response.json();
+  console.log('--------')
+  console.log(menu)
   return menu;
 }

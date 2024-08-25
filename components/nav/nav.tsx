@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import Logo from "@/public/logo.svg";
 import { Button } from "../ui/button";
 import { MobileNav } from "./mobile-nav";
-import { getMenuBySlug } from "@/lib/wordpress";
+import { baseUrl, getMenuBySlug } from "@/lib/wordpress";
 
 export const Nav = async ({ className, children, id }: NavProps) => {
   const mainMenu = await getMenuBySlug('main')
@@ -43,9 +43,14 @@ export const Nav = async ({ className, children, id }: NavProps) => {
         {children}
         <div className="flex items-center gap-2">
           <div className="mx-2 hidden md:flex">
-            {items.map(({ID, title, url}) => (
+            {items.map(({
+              ID,
+              slug,
+              title,
+              type,
+            }) => (
               <Button key={ID} asChild variant="ghost" size="sm">
-                <Link href={url}>
+                <Link href={`/${type === 'post_type' ? 'pages' : ''}/${slug}`}>
                   {title}
                 </Link>
               </Button>

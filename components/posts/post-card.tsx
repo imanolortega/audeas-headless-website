@@ -12,7 +12,7 @@ import {
 
 export default async function PostCard({ post }: { post: Post }) {
   const media = await getFeaturedMediaById(post.featured_media);
-  const author = await getAuthorById(post.author);
+  //const author = await getAuthorById(post.author);
   const date = new Date(post.date).toLocaleDateString("es-AR", {
     month: "long",
     day: "numeric",

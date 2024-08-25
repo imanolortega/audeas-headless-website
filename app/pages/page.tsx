@@ -4,12 +4,16 @@ import Link from "next/link";
 
 export default async function Page() {
   const pages = await getAllPages();
+  console.log('----')
+  console.log('----')
+  console.log(pages)
+  console.log('****')
+  console.log('****')
 
   return (
     <Section>
       <Container>
         <h1>Páginas</h1>
-
         <h2>Todas las páginas</h2>
         <div className="grid">
           {pages.map((page: any) => (

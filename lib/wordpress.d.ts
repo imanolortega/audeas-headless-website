@@ -241,7 +241,8 @@ type FilterBarProps = {
 type Item = {
   title: string;
   ID: number;
-  url: string;
+  slug: string;
+  type: string;
 }
 
 export type Menu = {
