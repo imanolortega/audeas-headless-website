@@ -113,7 +113,7 @@ export default function FilterPosts({
       </Select>
 
       <Button variant="outline" onClick={handleResetFilters}>
-        Reset Filters
+        Reset Filtros
       </Button>
     </div>
   );
