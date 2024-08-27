@@ -9,10 +9,10 @@ import { getAllPosts } from "@/lib/wordpress";
 
 export default async function Home() {
   const posts = await getAllPosts();
-  console.log(posts);
+
   return (
     <>
-      <Section>
+      <Section className="md:pb-0">
         <Container>
           <ExampleJsx />
         </Container>
@@ -30,16 +30,13 @@ const ExampleJsx = () => {
   return (
     <article className="prose-m-none">
       <h1>
-        <Balancer>Next.js and WordPress Starter</Balancer>
+        <Balancer>Audeas New Site</Balancer>
       </h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        commodo consequat.
       </p>
       <div className="grid md:grid-cols-3 gap-4 mt-6 not-prose">
         <Link
@@ -121,15 +118,15 @@ const ExampleJsx = () => {
 
 const LatestsPost = ({ posts }: { posts: any }) => {
   return (
-    <div className="prose-m-none">
-      <h1>
+    <>
+      <h2>
         <Balancer>Últimas Noticias</Balancer>
-      </h1>
+      </h2>
       <div className="grid md:grid-cols-3 gap-4 z-0">
         {posts.map((post: any) => (
           <PostCard key={post.id} post={post} />
         ))}
       </div>
-    </div>
+    </>
   );
 };
