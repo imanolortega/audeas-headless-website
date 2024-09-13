@@ -56,6 +56,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        audeas: {
+          DEFAULT: "hsl(var(--audeas-green))",
+          foreground: "hsl(var(--audeas-green-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
