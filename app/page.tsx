@@ -4,20 +4,26 @@ import Balancer from "react-wrap-balancer";
 import Link from "next/link";
 
 import { File, Pen, Tag, Boxes, User, Folder } from "lucide-react";
+import { getAllPosts, getPageBySlug } from "@/lib/wordpress";
 import PostCard from "@/components/posts/post-card";
-import { getAllPosts } from "@/lib/wordpress";
+import CTA from "@/components/cta/cta";
+import FeatureNine from "@/components/feature/feature";
 
 export default async function Home() {
   const posts = await getAllPosts();
+  const page = await getPageBySlug('home');
+  console.log(page)
 
   return (
     <>
-      <Section className="md:pb-0">
+      <FeatureNine />
+      <Section className="md:py-8">
         <Container>
           <ExampleJsx />
         </Container>
       </Section>
-      <Section>
+      <CTA />
+      <Section className="bg-accent md:py-8">
         <Container>
           <LatestsPost posts={posts} />
         </Container>
@@ -29,18 +35,9 @@ export default async function Home() {
 const ExampleJsx = () => {
   return (
     <article className="prose-m-none">
-      <h1>
-        <Balancer>Audeas New Site</Balancer>
-      </h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
       <div className="grid md:grid-cols-3 gap-4 mt-6 not-prose">
         <Link
-          className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
+          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
           href="/posts"
         >
           <Pen size={32} />
@@ -52,7 +49,7 @@ const ExampleJsx = () => {
           </span>
         </Link>
         <Link
-          className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
+          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
           href="/pages"
         >
           <File size={32} />
@@ -64,7 +61,7 @@ const ExampleJsx = () => {
           </span>
         </Link>
         <Link
-          className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
+          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
           href="/posts/authors"
         >
           <User size={32} />
@@ -76,7 +73,7 @@ const ExampleJsx = () => {
           </span>
         </Link>
         <Link
-          className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
+          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
           href="/posts/tags"
         >
           <Tag size={32} />
@@ -88,7 +85,7 @@ const ExampleJsx = () => {
           </span>
         </Link>
         <Link
-          className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
+          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
           href="/posts/categories"
         >
           <Boxes size={32} />
@@ -100,7 +97,7 @@ const ExampleJsx = () => {
           </span>
         </Link>
         <a
-          className="border h-48 bg-accent/50 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition-all"
+          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
           href="https://github.com/9d8dev/next-wp"
         >
           <Folder size={32} />

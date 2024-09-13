@@ -3,15 +3,14 @@ import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 
-import Logo from "@/public/logo.svg";
+import Logo from "@/public/home-logo-audeas.png";
 import { Button } from "../ui/button";
 import { MobileNav } from "./mobile-nav";
-import { baseUrl, getMenuBySlug } from "@/lib/wordpress";
+import { getMenuBySlug } from "@/lib/wordpress";
 
 export const Nav = async ({ className, children, id }: NavProps) => {
   const mainMenu = await getMenuBySlug('main')
   const items = mainMenu.items
-  console.log(items)
 
   return (
     <nav
@@ -36,8 +35,8 @@ export const Nav = async ({ className, children, id }: NavProps) => {
             src={Logo}
             alt="Logo"
             className="dark:invert"
-            width={84}
-            height={30.54}
+            width={175}
+            height={80}
           ></Image>
         </Link>
         {children}

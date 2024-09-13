@@ -17,7 +17,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "WordPress & Next.js Starter by 9d8",
+  title: "Audeas | Asociación Civil",
   description:
     "A starter template for Next.js with WordPress as a headless CMS.",
   metadataBase: new URL("https://wp.9d8.dev"),

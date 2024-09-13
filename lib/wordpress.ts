@@ -129,7 +129,8 @@ export async function getPageById(id: number): Promise<Page> {
 }
 
 export async function getPageBySlug(slug: string): Promise<Page> {
-  const url = getUrl("/wp-json/wp/v2/pages", { slug });
+  const url = getUrl("/wp-json/wp/v2/pages", { slug, _embed: true });
+  console.log(url)
   const response = await fetch(url);
   const page: Page[] = await response.json();
   return page[0];
@@ -202,7 +203,6 @@ export async function getMenuBySlug(slug: string): Promise<Menu> {
   const url = getUrl(`/wp-json/wp/v2/menus/${slug}`);
   const response = await fetch(url);
   const menu: Menu = await response.json();
-  console.log('--------')
-  console.log(menu)
+
   return menu;
 }

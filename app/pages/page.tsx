@@ -4,11 +4,6 @@ import Link from "next/link";
 
 export default async function Page() {
   const pages = await getAllPages();
-  console.log('----')
-  console.log('----')
-  console.log(pages)
-  console.log('****')
-  console.log('****')
 
   return (
     <Section>

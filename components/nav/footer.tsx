@@ -4,7 +4,7 @@ import { ThemeToggle } from "@/components/theme/theme-toggle";
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Logo from "@/public/logo.svg";
+import Logo from "@/public/home-logo-audeas.png";
 import { contentMenu, mainMenu } from '@/menu.config';
 import { getMenuBySlug } from '@/lib/wordpress';
 
@@ -13,7 +13,7 @@ export const Footer = async () => {
   const items = mainMenu.items
 
   return (
-    <footer>
+    <footer className='bg-background'>
       <Section>
         <Container className="grid md:grid-cols-[1.5fr_0.5fr_0.5fr] gap-12">
           <div className="flex flex-col gap-6 not-prose">
@@ -22,8 +22,8 @@ export const Footer = async () => {
               <Image
                 src={Logo}
                 alt="Logo"
-                width={120}
-                height={27.27}
+                width={175}
+                height={80}
                 className="dark:invert hover:opacity-75 transition-all"
               ></Image>
             </Link>
