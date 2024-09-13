@@ -22,7 +22,7 @@ const CTA = () => {
           </Balancer>
         </h4>
         <div className="not-prose flex items-center gap-2">
-          <Button asChild>
+          <Button className="bg-audeas" asChild>
             <Link href="#">Get Started</Link>
           </Button>
           <Button variant="link" asChild>
