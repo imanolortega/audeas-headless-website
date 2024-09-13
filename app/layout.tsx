@@ -10,6 +10,7 @@ import { Main } from "@/components/craft";
 import { cn } from "@/lib/utils";
 import { Nav } from "@/components/nav/nav";
 import { Footer } from "@/components/nav/footer";
+import { TopNav } from "@/components/nav/top-nav";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <TopNav />
           <Nav />
           <Main>{children}</Main>
           <Footer />
