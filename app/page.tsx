@@ -35,7 +35,7 @@ export default async function Home() {
 const ExampleJsx = () => {
   return (
     <article className="prose-m-none">
-      <div className="grid md:grid-cols-3 gap-4 mt-6 not-prose">
+      <div className="grid md:grid-cols-3 gap-4 not-prose">
         <Link
           className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
           href="/posts"
