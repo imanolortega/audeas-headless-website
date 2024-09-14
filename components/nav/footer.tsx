@@ -58,7 +58,7 @@ export const Footer = async () => {
             ))}
           </div>
         </Container>
-        <Container className="border-t not-prose flex flex-col md:flex-row md:gap-2 gap-6 justify-between md:items-center">
+        <Container className="border-t border-audeas not-prose flex flex-col md:flex-row md:gap-2 gap-6 justify-between md:items-center">
           <ThemeToggle />
           <p className="text-muted-foreground">
             © 2024. Audeas | Asociación Civil

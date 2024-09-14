@@ -10,7 +10,7 @@ import PostCard from "@/components/posts/post-card";
 
 export default async function Home() {
   const posts = await getAllPosts();
-  const page = await getPageBySlug('home');
+  const page = await getPageBySlug("home");
 
   return (
     <>
@@ -34,7 +34,7 @@ const LatestsPost = ({ posts }: { posts: any }) => {
   return (
     <>
       <h2>
-        <Balancer>Últimas Noticias</Balancer>
+        <Balancer className="font-semibold">Últimas Noticias</Balancer>
       </h2>
       <div className="grid md:grid-cols-3 gap-4 z-0">
         {posts.map((post: any) => (

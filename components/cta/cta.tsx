@@ -14,7 +14,7 @@ const CTA = () => {
   return (
     <Section className="bg-background">
       <Container className="flex flex-col gap-6">
-        <h2 className="!my-0">Lorem ipsum dolor sit amet</h2>
+        <h3 className="!my-0 md:text-3xl md:font-semibold">Lorem ipsum dolor sit amet</h3>
         <h4 className="text-muted-foreground">
           <Balancer>
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

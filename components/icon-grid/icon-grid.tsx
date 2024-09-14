@@ -1,80 +1,93 @@
 import Link from "next/link";
 
-import { File, Pen, Tag, Boxes, User, Folder } from "lucide-react";
+import {
+  Handshake,
+  Newspaper,
+  Microscope,
+  Briefcase,
+  GraduationCap,
+  BookOpenText,
+} from "lucide-react";
 
 export const IconGrid = () => {
   return (
     <article className="prose-m-none">
       <div className="grid md:grid-cols-3 gap-4 not-prose">
         <Link
-          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
-          href="/posts"
+          className="border border-audeas/40 h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
+          href="/"
         >
-          <Pen size={32} />
+          <Newspaper size={32} />
           <span>
-            Noticias{" "}
+            Publicaciones{" "}
             <span className="block text-sm text-muted-foreground">
-              Últimas publicaciones de Audeas
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et
+              dolore magna aliqua.
             </span>
           </span>
         </Link>
         <Link
-          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
-          href="/pages"
+          className="border border-audeas/40  h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
+          href="/"
         >
-          <File size={32} />
+          <Handshake size={32} />
           <span>
-            Páginas{" "}
+            Relaciones Institucionales{" "}
             <span className="block text-sm text-muted-foreground">
-              Todas las páginas
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et
+              dolore magna aliqua.
             </span>
           </span>
         </Link>
         <Link
-          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
-          href="/posts/authors"
+          className="border border-audeas/40  h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
+          href="/"
         >
-          <User size={32} />
+          <GraduationCap size={32} />
           <span>
-            Autores{" "}
+            Posgrado{" "}
             <span className="block text-sm text-muted-foreground">
-              Lista de los autores
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et
+              dolore magna aliqua.
             </span>
           </span>
         </Link>
         <Link
-          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
+          className="border border-audeas/40  h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
           href="/posts/tags"
         >
-          <Tag size={32} />
+          <Microscope size={32} />
           <span>
-            Tags{" "}
+            Ciencia y Tecnología{" "}
             <span className="block text-sm text-muted-foreground">
-              Contenido por etiquetas
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et
+              dolore magna aliqua.
             </span>
           </span>
         </Link>
         <Link
-          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
+          className="border border-audeas/40  h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
           href="/posts/categories"
         >
-          <Boxes size={32} />
+          <Briefcase size={32} />
           <span>
-            Categorías{" "}
+            Actividades{" "}
             <span className="block text-sm text-muted-foreground">
-              Lista de categorías
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et
+              dolore magna aliqua.
             </span>
           </span>
         </Link>
         <a
-          className="border h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
+          className="border border-audeas/40  h-48 bg-accent/75 rounded-lg p-4 flex flex-col justify-between hover:scale-[1.02] hover:bg-accent/10 transition-all"
           href="https://github.com/9d8dev/next-wp"
         >
-          <Folder size={32} />
+          <BookOpenText size={32} />
           <span>
             Documentación útil{" "}
             <span className="block text-sm text-muted-foreground">
-              Todos los documentos
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et
+              dolore magna aliqua.
             </span>
           </span>
         </a>

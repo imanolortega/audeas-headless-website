@@ -12,7 +12,6 @@ import {
 
 export default async function PostCard({ post }: { post: Post }) {
   const media = await getFeaturedMediaById(post.featured_media);
-  //const author = await getAuthorById(post.author);
   const date = new Date(post.date).toLocaleDateString("es-AR", {
     month: "long",
     day: "numeric",
@@ -40,7 +39,7 @@ export default async function PostCard({ post }: { post: Post }) {
         </div>
         <div
           dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-          className="text-xl text-primary font-medium group-hover:underline decoration-muted-foreground underline-offset-4 decoration-dotted transition-all"
+          className="text-xl text-audeas font-bold group-hover:underline decoration-muted-foreground underline-offset-4 decoration-dotted transition-all"
         ></div>
         <div
           className="text-sm"
@@ -53,9 +52,9 @@ export default async function PostCard({ post }: { post: Post }) {
       </div>
 
       <div className="flex flex-col gap-4">
-        <hr />
+        <hr className="border-audeas" />
         <div className="flex justify-between items-center text-xs">
-          <p>{category.name}</p>
+          <p className="">{category.name}</p>
           <p>{date}</p>
         </div>
       </div>
