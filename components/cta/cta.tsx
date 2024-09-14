@@ -23,10 +23,10 @@ const CTA = () => {
         </h4>
         <div className="not-prose flex items-center gap-2">
           <Button className="bg-audeas" asChild>
-            <Link href="#">Get Started</Link>
+            <Link href="#">Recursos</Link>
           </Button>
           <Button variant="link" asChild>
-            <Link href="#">Learn More {"->"}</Link>
+            <Link href="#">Más información {"->"}</Link>
           </Button>
         </div>
       </Container>
