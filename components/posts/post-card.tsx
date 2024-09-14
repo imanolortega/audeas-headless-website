@@ -23,7 +23,7 @@ export default async function PostCard({ post }: { post: Post }) {
     <Link
       href={`/posts/${post.slug}`}
       className={cn(
-        "border p-4 bg-background/70 rounded-lg group flex justify-between flex-col not-prose gap-8",
+        "border border-audeas/30 p-4 bg-background/70 rounded-lg group flex justify-between flex-col not-prose gap-8",
         "hover:bg-background transition-all"
       )}
     >

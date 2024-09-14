@@ -21,7 +21,7 @@ export default async function Home() {
         </Container>
       </Section>
       <CTA />
-      <Section className="bg-accent md:py-8">
+      <Section className="bg-accent md:pt-0 md:pb-8">
         <Container>
           <LatestsPost posts={posts} />
         </Container>
@@ -33,8 +33,8 @@ export default async function Home() {
 const LatestsPost = ({ posts }: { posts: any }) => {
   return (
     <>
-      <h2>
-        <Balancer className="font-semibold">Últimas Noticias</Balancer>
+      <h2 className="text-center">
+        <Balancer className="font-semibold text-center">Últimas Noticias</Balancer>
       </h2>
       <div className="grid md:grid-cols-3 gap-4 z-0">
         {posts.map((post: any) => (

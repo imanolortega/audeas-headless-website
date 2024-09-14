@@ -33,8 +33,8 @@ const photos = [
 
 const FeatureNine = () => {
   return (
-    <Section className="md:py-8">
-      <Container>
+    <Section className="md:p-4">
+      <Container className="md:p-4">
         <Carousel className="mt-6 w-full">
           <CarouselContent className="-ml-1">
             {photos.map((photo, index) => (
@@ -47,11 +47,7 @@ const FeatureNine = () => {
                       </h3>
                       <p className="text-muted">
                         {" "}
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
+                        Somos una Asociación Civil sin fines de lucro que agrupa a instituciones universitarias oficialmente reconocidas en la República Argentina, tales como Facultades, escuelas, departamentos e institutos, que ofrecen enseñanza superior en las áreas de Agropecuaria y/o Forestal.
                       </p>
                     </div>
                     <CardContent className="not-prose flex w-full h-96 items-center justify-center brightness-50">
