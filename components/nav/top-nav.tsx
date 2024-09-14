@@ -12,15 +12,15 @@ export const TopNav = () => {
         id="nav-container"
         className="max-w-5xl mx-auto py-2 px-6 sm:px-8 flex justify-end items-center"
       >
-        <div className="flex gap-2">
-          <Button className="h-8 w-8 hover:bg-transparent" variant="ghost" size="icon">
-            <Instagram color="white" />
+        <div className="flex gap">
+          <Button className="hover:bg-transparent" variant="ghost" size="icon">
+            <Instagram className="w-5" color="white" />
           </Button>
-          <Button className="h-8 w-8 hover:bg-transparent" variant="ghost" size="icon">
-            <Twitter color="white" />
+          <Button className="hover:bg-transparent" variant="ghost" size="icon">
+            <Twitter className="w-5" color="white" />
           </Button>
-          <Button className="h-8 w-8 hover:bg-transparent" variant="ghost" size="icon">
-            <Facebook color="white" />
+          <Button className="hover:bg-transparent" variant="ghost" size="icon">
+            <Facebook className="w-5" color="white" />
           </Button>
         </div>
       </div>
