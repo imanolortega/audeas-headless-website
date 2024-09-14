@@ -35,25 +35,26 @@ const FeatureNine = () => {
   return (
     <Section className="md:py-8">
       <Container>
-        <h1>
-          <Balancer>Audeas New Site</Balancer>
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
         <Carousel className="mt-6 w-full">
           <CarouselContent className="-ml-1">
             {photos.map((photo, index) => (
-              <CarouselItem
-                key={index}
-                className="pl-1"
-              >
+              <CarouselItem key={index} className="pl-1">
                 <div className="p-1">
                   <Card className="relative overflow-hidden">
-                    <CardContent className="not-prose flex aspect-video items-center justify-center">
+                    <div className="p-8 absolute z-50 bg-transparent">
+                      <h3 className="md:text-4xl	text-white">
+                        <Balancer>Test</Balancer>
+                      </h3>
+                      <p className="text-muted">
+                        {" "}
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                    <CardContent className="not-prose flex w-full h-96 items-center justify-center brightness-50">
                       <Image
                         src={photo.src}
                         alt="Presets.com Example Image"
