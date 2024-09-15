@@ -9,8 +9,8 @@ export default function BackButton() {
 
   return (
     <Button variant="outline" size="sm" onClick={() => router.back()}>
-    <ChevronLeft className="h-4 w-4" />
-    <span>Atrás</span>
+      <ChevronLeft className="h-4 w-4" />
+      <span>Atrás</span>
     </Button>
   );
 }

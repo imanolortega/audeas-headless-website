@@ -19,7 +19,7 @@ export const IconGrid = () => {
         >
           <Newspaper size={32} />
           <span>
-            Publicaciones{" "}
+            Novedades{" "}
             <span className="block text-sm text-muted-foreground">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et
               dolore magna aliqua.

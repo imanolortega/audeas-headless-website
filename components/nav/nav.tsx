@@ -9,8 +9,8 @@ import { MobileNav } from "./mobile-nav";
 import { getMenuBySlug } from "@/lib/wordpress";
 
 export const Nav = async ({ className, children, id }: NavProps) => {
-  const mainMenu = await getMenuBySlug('main')
-  const items = mainMenu.items
+  const mainMenu = await getMenuBySlug("main");
+  const items = mainMenu.items;
 
   return (
     <nav
@@ -18,7 +18,7 @@ export const Nav = async ({ className, children, id }: NavProps) => {
         "sticky z-50 top-0 bg-background",
         "border-b",
         "fade-in",
-        className,
+        className
       )}
       id={id}
     >
@@ -42,21 +42,29 @@ export const Nav = async ({ className, children, id }: NavProps) => {
         {children}
         <div className="flex items-center gap-2">
           <div className="mx-2 hidden md:flex">
-            {items.map(({
-              ID,
-              slug,
-              title,
-              type,
-            }) => (
-              <Button key={ID} asChild variant="ghost" size="sm">
-                <Link href={`/${type === 'post_type'  ? 'pages' : ''}/${slug}`}>
-                  {title}
-                </Link>
-              </Button>
-            ))}
+            {items.map(({ ID, url, slug, title, type }) => {
+              const getUrl = (
+                type: string,
+                url: string,
+                slug: string
+              ): string => {
+                return type === "post_type" ? `pages/${slug}` : url;
+              };
+              const path = getUrl(type, url, slug);
+              return (
+                <Button key={ID} asChild variant="ghost" size="sm">
+                  <Link href={path}>{title}</Link>
+                </Button>
+              );
+            })}
           </div>
-          <Button asChild className="hidden sm:flex bg-audeas hover:bg-audeas/95">
-            <Link className="text-white" href="/">Recursos</Link>
+          <Button
+            asChild
+            className="hidden sm:flex bg-audeas hover:bg-audeas/95"
+          >
+            <Link className="text-white" href="/">
+              Recursos
+            </Link>
           </Button>
           <MobileNav />
         </div>

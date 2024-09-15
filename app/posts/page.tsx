@@ -17,6 +17,7 @@ import {
 import { Section, Container } from "@/components/craft";
 import PostCard from "@/components/posts/post-card";
 import FilterPosts from "./filter";
+import BackButton from "@/components/back";
 
 export default async function Page({
   searchParams,
@@ -40,8 +41,11 @@ export default async function Page({
 
   return (
     <Section>
+      <Container className="md:pb-2">
+        <BackButton />
+      </Container>
       <Container>
-        <h1>Publicaciones</h1>
+        <h1>Novedades</h1>
         <FilterPosts
           authors={authors}
           tags={tags}
@@ -59,7 +63,7 @@ export default async function Page({
           </div>
         ) : (
           <div className="h-24 w-full border rounded-lg bg-accent/25 flex items-center justify-center">
-            <p>No Results Found</p>
+            <p>Sin resultados</p>
           </div>
         )}
 

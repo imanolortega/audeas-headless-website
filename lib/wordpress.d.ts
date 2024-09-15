@@ -29,16 +29,16 @@ export type Post = {
   sticky: boolean;
   template: string;
   format:
-    | "standard"
-    | "aside"
-    | "chat"
-    | "gallery"
-    | "link"
-    | "image"
-    | "quote"
-    | "status"
-    | "video"
-    | "audio";
+  | "standard"
+  | "aside"
+  | "chat"
+  | "gallery"
+  | "link"
+  | "image"
+  | "quote"
+  | "status"
+  | "video"
+  | "audio";
   meta: any[];
   categories: number[];
   tags: number[];
@@ -242,12 +242,13 @@ type Item = {
   title: string;
   ID: number;
   slug: string;
+  url: string;
   type: string;
 }
 
 export type Menu = {
   ID: number;
   name: string;
-  slug: string;
+  url: string;
   items: Item[]
 }

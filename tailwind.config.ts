@@ -11,6 +11,9 @@ const config = {
   ],
   prefix: "",
   theme: {
+    height: {
+      '120': '28rem',
+    },
     container: {
       center: true,
       padding: "2rem",

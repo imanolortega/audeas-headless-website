@@ -50,7 +50,7 @@ const FeatureNine = () => {
                         Somos una Asociación Civil sin fines de lucro que agrupa a instituciones universitarias oficialmente reconocidas en la República Argentina, tales como Facultades, escuelas, departamentos e institutos, que ofrecen enseñanza superior en las áreas de Agropecuaria y/o Forestal.
                       </p>
                     </div>
-                    <CardContent className="not-prose flex w-full h-96 items-center justify-center brightness-50">
+                    <CardContent className="not-prose flex w-full h-120 items-center justify-center brightness-50">
                       <Image
                         src={photo.src}
                         alt="Presets.com Example Image"

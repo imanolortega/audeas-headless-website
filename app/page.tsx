@@ -15,7 +15,7 @@ export default async function Home() {
   return (
     <>
       <FeatureNine />
-      <Section className="md:py-8">
+      <Section className="md:pb-10 md:pt-0">
         <Container>
           <IconGrid />
         </Container>
