@@ -114,6 +114,14 @@
   }
 }
 
+h1, h3, h4 {
+  font-weight: 600 !important;
+}
+
+img {
+  border-radius: 0.4rem;
+}
+
 .fade-in {
   -webkit-animation: fade-in 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: fade-in 500ms cubic-bezier(0.55, 0.085, 0.68, 0.53) both;

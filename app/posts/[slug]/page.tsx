@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
+import BackButton from "@/components/back";
 
 export async function generateMetadata({
   params,
@@ -37,6 +38,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <Section>
+      <Container className="md:pb-2">
+        <BackButton />
+      </Container>
       <Container>
         <h1>
           <Balancer>

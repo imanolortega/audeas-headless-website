@@ -49,7 +49,7 @@ export const Nav = async ({ className, children, id }: NavProps) => {
               type,
             }) => (
               <Button key={ID} asChild variant="ghost" size="sm">
-                <Link href={`/${type === 'post_type' ? 'pages' : ''}/${slug}`}>
+                <Link href={`/${type === 'post_type'  ? 'pages' : ''}/${slug}`}>
                   {title}
                 </Link>
               </Button>
