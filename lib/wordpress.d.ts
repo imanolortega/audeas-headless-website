@@ -238,7 +238,7 @@ type FilterBarProps = {
   selectedCategory?: string;
 };
 
-type Item = {
+export type Item = {
   title: string;
   ID: number;
   slug: string;

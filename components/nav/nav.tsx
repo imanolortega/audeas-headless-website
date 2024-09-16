@@ -14,7 +14,6 @@ import {
   NavigationMenuTrigger,
   NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
-import { Item } from "@/lib/wordpress";
 
 export const Nav = async ({ className, children, id }: NavProps) => {
   const mainMenu = await getMenuBySlug("main");
@@ -72,7 +71,7 @@ export const Nav = async ({ className, children, id }: NavProps) => {
                         >{title}</NavigationMenuTrigger>
                         <NavigationMenuContent>
                           <ul className="grid gap-3 p-4 md:w-[200px] lg:w-[300px]">
-                            {children.map((child: Item) => (
+                            {children.map((child: any) => (
                               <li key={child.ID}>
                                 <NavigationMenuLink asChild>
                                   <Link
