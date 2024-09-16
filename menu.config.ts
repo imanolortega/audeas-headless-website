@@ -1,12 +1,10 @@
 // Define the menu items
 export const mainMenu = {
-  inicio: "/",
-  nosotros: "/pages/sample-page",
-  blog: "/posts",
+  Institucional: "/pages/institucional",
+  Novedades: "/posts",
+  Movilidad: "/pages/movilidad-virtual-en-el-marco-de-audeas",
 };
 
 export const contentMenu = {
-  categorías: "/posts/categories",
-  etiquetas: "/posts/tags",
-  autores: "/posts/authors",
+  Contactanos: "/",
 };

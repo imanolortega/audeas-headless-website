@@ -4,10 +4,12 @@
 import * as React from "react";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 // Utility Imports
 import { Menu, ArrowRightSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Logo from "@/public/home-logo-audeas.png";
 
 // Component Imports
 import { Button } from "@/components/ui/button";
@@ -37,8 +39,14 @@ export function MobileNav() {
           className="flex items-center"
           onOpenChange={setOpen}
         >
-          <ArrowRightSquare className="mr-2 h-4 w-4" />
-          <span className="text-muted-foreground">My Site</span>
+          {/* <ArrowRightSquare className="mr-2 h-4 w-4" /> */}
+          <Image
+            src={Logo}
+            alt="Logo"
+            className="dark:invert"
+            width={175}
+            height={80}
+          />
         </MobileLink>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
           <div className="flex flex-col space-y-3">
@@ -49,7 +57,7 @@ export function MobileNav() {
                 {key.charAt(0).toUpperCase() + key.slice(1)}
               </MobileLink>
             ))}
-            <h3 className="text-small pt-6">Blog Menu</h3>
+            <h3 className="text-small pt-6">Contacto</h3>
             <Separator />
             {Object.entries(contentMenu).map(([key, href]) => (
               <MobileLink key={key} href={href} onOpenChange={setOpen}>
