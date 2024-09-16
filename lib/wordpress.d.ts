@@ -244,6 +244,7 @@ type Item = {
   slug: string;
   url: string;
   type: string;
+  children: Item[]
 }
 
 export type Menu = {

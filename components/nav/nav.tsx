@@ -11,7 +11,10 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
 } from "@/components/ui/navigation-menu";
+import { Item } from "@/lib/wordpress";
 
 export const Nav = async ({ className, children, id }: NavProps) => {
   const mainMenu = await getMenuBySlug("main");
@@ -46,10 +49,11 @@ export const Nav = async ({ className, children, id }: NavProps) => {
         </Link>
         {children}
         <div className="flex items-center gap-2">
-          {/* Links fuera del NavigationMenuTrigger */}
           <NavigationMenu>
             <NavigationMenuList>
-              {items.map(({ ID, url, slug, title, type }) => {
+              {items.map(({ ID, url, slug, title, type, children }) => {
+                const hasChildren = children && children.length > 0;
+
                 const getUrl = (
                   type: string,
                   url: string,
@@ -58,27 +62,55 @@ export const Nav = async ({ className, children, id }: NavProps) => {
                   return type === "post_type" ? `pages/${slug}` : url;
                 };
                 const path = getUrl(type, url, slug);
+
                 return (
                   <NavigationMenuItem key={ID}>
-                    <NavigationMenuLink asChild>
-                      <Link
-                        href={path}
-                        className="block font-normal select-none space-y-1 rounded-md p-3 leading-none no-underline transition-colors hover:bg-accent hover:text-accent-foreground"
-                      >
-                        {title}
-                      </Link>
-                    </NavigationMenuLink>
+                    {hasChildren ? (
+                      <>
+                        <NavigationMenuTrigger
+                        className="text-base font-normal"
+                        >{title}</NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                          <ul className="grid gap-3 p-4 md:w-[200px] lg:w-[300px]">
+                            {children.map((child: Item) => (
+                              <li key={child.ID}>
+                                <NavigationMenuLink asChild>
+                                  <Link
+                                    href={getUrl(
+                                      child.type,
+                                      child.url,
+                                      child.slug
+                                    )}
+                                    className="block select-none space-y-1 rounded-md p-3 leading-none no-underline transition-colors hover:bg-accent hover:text-accent-foreground"
+                                  >
+                                    {child.title}
+                                  </Link>
+                                </NavigationMenuLink>
+                              </li>
+                            ))}
+                          </ul>
+                        </NavigationMenuContent>
+                      </>
+                    ) : (
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href={path}
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline transition-colors hover:bg-accent hover:text-accent-foreground"
+                        >
+                          {title}
+                        </Link>
+                      </NavigationMenuLink>
+                    )}
                   </NavigationMenuItem>
                 );
               })}
             </NavigationMenuList>
           </NavigationMenu>
-
           <Button
             asChild
             className="hidden sm:flex bg-audeas hover:bg-audeas/95 text-base"
           >
-            <Link className="text-white" href="/">
+            <Link className="text-white font-semibold" href="/">
               Recursos
             </Link>
           </Button>
