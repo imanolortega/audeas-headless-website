@@ -15,6 +15,12 @@ const nextConfig = {
         pathname: "/**",
       },
       {
+        protocol: "https",
+        hostname: process.env.WORDPRESS_HOSTNAME,
+        port: "",
+        pathname: "/wp-content/uploads/**",
+      },
+      {
         hostname: 'images.unsplash.com'
       }
     ],
