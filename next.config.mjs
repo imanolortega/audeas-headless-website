@@ -22,6 +22,9 @@ const nextConfig = {
       },
       {
         hostname: 'images.unsplash.com'
+      },
+      {
+        hostname: 'khaki-tiger-476478.hostingersite.com'
       }
     ],
   },
