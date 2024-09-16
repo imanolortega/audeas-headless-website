@@ -20,8 +20,8 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Audeas | Asociación Civil",
   description:
-    "A starter template for Next.js with WordPress as a headless CMS.",
-  metadataBase: new URL("https://wp.9d8.dev"),
+    "Somos una Asociación Civil sin fines de lucro que agrupa a instituciones universitarias que ofrecen enseñanza superior en las áreas de Agropecuaria y/o Forestal.",
+  metadataBase: new URL("https://audeas.vercel.app/"),
 };
 
 // Revalidate content every hour
