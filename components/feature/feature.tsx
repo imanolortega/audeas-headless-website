@@ -50,6 +50,8 @@ const FeatureNine = () => {
                     <CardContent className="not-prose flex w-full h-[28rem] items-center justify-center brightness-50">
                       <Image
                         loading='eager'
+                        placeholder="blur"
+                        blurDataURL='/audeas-asociacion-civil.webp'
                         src={photo.src}
                         alt="Presets.com Example Image"
                         width={720}
