@@ -29,7 +29,7 @@ export const Footer = async () => {
             </Link>
           </div>
           <div className="flex flex-col gap-2 text-sm">
-            <h5 className="font-medium text-base">Nosotros</h5>
+            <h4 className="font-medium text-base">Nosotros</h4>
             {Object.entries(mainMenu).map(([key, href]) => (
               <Link
                 className="hover:underline underline-offset-4"
@@ -41,7 +41,7 @@ export const Footer = async () => {
             ))}
           </div>
           <div className="flex flex-col gap-2 text-sm">
-            <h5 className="font-medium text-base">Contacto</h5>
+            <h4 className="font-medium text-base">Contacto</h4>
             {Object.entries(contentMenu).map(([key, href]) => (
               <Link
                 className="hover:underline underline-offset-4"

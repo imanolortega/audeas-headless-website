@@ -52,6 +52,7 @@ const FeatureNine = () => {
                     </div>
                     <CardContent className="not-prose flex w-full h-[28rem] items-center justify-center brightness-50">
                       <Image
+                        loading='eager'
                         src={photo.src}
                         alt="Presets.com Example Image"
                         width={720}

@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   },
 };
 
-// Revalidate content every hour
 export const revalidate = 3600;
 
 export default function RootLayout({
