@@ -9,8 +9,8 @@ import { contentMenu, mainMenu } from '@/menu.config';
 import { getMenuBySlug } from '@/lib/wordpress';
 
 export const Footer = async () => {
-  const mainMenu = await getMenuBySlug('main')
-  const items = mainMenu.items
+  // const mainMenu = await getMenuBySlug('main')
+  // const items = mainMenu.items
 
   return (
     <footer className='bg-background'>
@@ -29,24 +29,19 @@ export const Footer = async () => {
             </Link>
           </div>
           <div className="flex flex-col gap-2 text-sm">
-            <h5 className="font-medium text-base">Website</h5>
-            {items.map(({
-              ID,
-              slug,
-              title,
-              type,
-            }) => (
+            <h5 className="font-medium text-base">Nosotros</h5>
+            {Object.entries(mainMenu).map(([key, href]) => (
               <Link
                 className="hover:underline underline-offset-4"
-                key={ID}
-                href={`/${type === 'post_type' ? 'pages' : ''}/${slug}`}
+                key={href}
+                href={href}
               >
-                {title}
+                {key.charAt(0).toUpperCase() + key.slice(1)}
               </Link>
             ))}
           </div>
           <div className="flex flex-col gap-2 text-sm">
-            <h5 className="font-medium text-base">Blog</h5>
+            <h5 className="font-medium text-base">Contacto</h5>
             {Object.entries(contentMenu).map(([key, href]) => (
               <Link
                 className="hover:underline underline-offset-4"
