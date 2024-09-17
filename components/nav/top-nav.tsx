@@ -13,13 +13,13 @@ export const TopNav = () => {
         className="max-w-5xl mx-auto py-2 px-6 sm:px-8 flex justify-end items-center"
       >
         <div className="flex gap">
-          <Button name="instagram" className="hover:bg-transparent" variant="ghost" size="icon">
+          <Button aria-label="instagram btn" name="instagram btn" className="hover:bg-transparent" variant="ghost" size="icon">
             <Instagram className="w-5" color="white" />
           </Button>
-          <Button name="twitter" className="hover:bg-transparent" variant="ghost" size="icon">
+          <Button aria-label="twitter btn" name="twitter btn" className="hover:bg-transparent" variant="ghost" size="icon">
             <Twitter className="w-5" color="white" />
           </Button>
-          <Button name="facebook" className="hover:bg-transparent" variant="ghost" size="icon">
+          <Button aria-label="facebook btn" name="facebook btn" className="hover:bg-transparent" variant="ghost" size="icon">
             <Facebook className="w-5" color="white" />
           </Button>
         </div>
