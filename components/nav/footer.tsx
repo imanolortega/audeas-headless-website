@@ -1,5 +1,4 @@
 import { Container, Section } from '../craft';
-import { ThemeToggle } from "@/components/theme/theme-toggle";
 
 import Image from 'next/image';
 import Link from 'next/link';

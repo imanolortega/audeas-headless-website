@@ -15,13 +15,13 @@ import Balancer from "react-wrap-balancer";
 
 const photos = [
   {
+    src: "https://keystoneacademic-res.cloudinary.com/image/upload/f_auto/q_auto/g_auto/w_780/dpr_2.0/element/12/124334_shutterstock_244469683.jpg",
+  },
+  {
     src: "https://images.unsplash.com/photo-1721137287642-43b251bd6f00?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     src: "https://images.unsplash.com/photo-1507730690594-f21182eee8b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1721041879224-ff011603ada5?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     src: "https://images.unsplash.com/photo-1720983627245-ca4a6913016f?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -42,7 +42,7 @@ const FeatureNine = () => {
                 <div className="p-1">
                   <Card className="relative overflow-hidden">
                     <div className="p-8 absolute z-50 bg-transparent">
-                      <h3 className="md:text-4xl text-4xl md:font-semibold	text-white">
+                      <h3 className="md:text-4xl text-3xl md:font-semibold	text-white">
                         <Balancer>Conocé Audeas</Balancer>
                       </h3>
                       <p className="text-muted">

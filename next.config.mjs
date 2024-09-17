@@ -25,6 +25,9 @@ const nextConfig = {
       },
       {
         hostname: 'khaki-tiger-476478.hostingersite.com'
+      },
+      {
+        hostname: 'keystoneacademic-res.cloudinary.com'
       }
     ],
   },

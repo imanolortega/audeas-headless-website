@@ -47,7 +47,7 @@ export const Nav = async ({ className, children, id }: NavProps) => {
         </Link>
         {children}
         <div className="flex items-center gap-2">
-          <NavigationMenu>
+          <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
               {items.map(({ ID, url, slug, title, type, children }) => {
                 const hasChildren = children && children.length > 0;
