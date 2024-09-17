@@ -28,7 +28,7 @@ const nextConfig = {
       },
       {
         hostname: 'keystoneacademic-res.cloudinary.com'
-      }
+      },
     ],
   },
 };
