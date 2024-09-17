@@ -22,7 +22,14 @@ export const metadata: Metadata = {
     "Somos una Asociación Civil que agrupa a instituciones universitarias que ofrecen enseñanza superior Agropecuaria y Forestal.",
   metadataBase: new URL("https://audeas.vercel.app/"),
   openGraph: {
-    images: '/audeas-asociacion-civil.webp',
+    title: "Audeas | Asociación Civil",
+    description:
+      "Somos una Asociación Civil que agrupa a instituciones universitarias que ofrecen enseñanza superior Agropecuaria y Forestal.",
+    url: "https://audeas.vercel.app/",
+    siteName: "Audeas",
+    images: "/audeas-asociacion-civil.webp",
+    locale: "es_AR",
+    type: "website",
   },
 };
 

@@ -42,7 +42,7 @@ const FeatureNine = () => {
                 <div className="p-1">
                   <Card className="relative overflow-hidden">
                     <div className="p-8 absolute z-50 bg-transparent">
-                      <h3 className="md:text-4xl md:font-semibold	text-white">
+                      <h3 className="md:text-4xl text-4xl md:font-semibold	text-white">
                         <Balancer>Conocé Audeas</Balancer>
                       </h3>
                       <p className="text-muted">
