@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
-import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
@@ -38,21 +37,12 @@ export default function RootLayout({
       <body
         className={cn("min-h-screen font-sans antialiased", fontSans.variable)}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <TopNav />
-          <Nav />
-          <Main>{children}</Main>
-          <Footer />
-        </ThemeProvider>
+        <TopNav />
+        <Nav />
+        <Main>{children}</Main>
+        <Footer />
         <Analytics />
       </body>
     </html>
   );
 }
-
-

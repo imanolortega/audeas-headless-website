@@ -41,7 +41,6 @@ export const Nav = async ({ className, children, id }: NavProps) => {
           <Image
             src={Logo}
             alt="Logo"
-            className="dark:invert"
             width={175}
             height={80}
           />

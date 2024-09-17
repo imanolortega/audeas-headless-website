@@ -39,11 +39,9 @@ export function MobileNav() {
           className="flex items-center"
           onOpenChange={setOpen}
         >
-          {/* <ArrowRightSquare className="mr-2 h-4 w-4" /> */}
           <Image
             src={Logo}
             alt="Logo"
-            className="dark:invert"
             width={175}
             height={80}
           />

@@ -24,7 +24,7 @@ export const Footer = async () => {
                 alt="Logo"
                 width={175}
                 height={80}
-                className="dark:invert hover:opacity-75 transition-all"
+                className="hover:opacity-75 transition-all"
               ></Image>
             </Link>
           </div>
@@ -53,8 +53,7 @@ export const Footer = async () => {
             ))}
           </div>
         </Container>
-        <Container className="border-t border-audeas not-prose flex flex-col md:flex-row md:gap-2 gap-6 justify-between md:items-center">
-          <ThemeToggle />
+        <Container className="border-t border-audeas not-prose flex flex-col md:flex-row md:gap-2 gap-6 justify-end md:items-center">
           <p className="text-muted-foreground">
             © 2024. Audeas | Asociación Civil
           </p>
