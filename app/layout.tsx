@@ -19,8 +19,11 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Audeas | Asociación Civil",
   description:
-    "Somos una Asociación Civil sin fines de lucro que agrupa a instituciones universitarias que ofrecen enseñanza superior en las áreas de Agropecuaria y/o Forestal.",
+    "Somos una Asociación Civil que agrupa a instituciones universitarias que ofrecen enseñanza superior Agropecuaria y Forestal.",
   metadataBase: new URL("https://audeas.vercel.app/"),
+  openGraph: {
+    images: '/audeas-asociacion-civil.webp',
+  },
 };
 
 // Revalidate content every hour
