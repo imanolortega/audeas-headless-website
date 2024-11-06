@@ -17,9 +17,11 @@ const CTA = () => {
         <h3 className="!my-0 md:text-3xl md:font-semibold">¿Quiénes somos?</h3>
         <h4 className="text-muted-foreground">
           <Balancer>
-            Somos una Asociación Civil sin fines de lucro que agrupa a
-            instituciones universitarias que ofrecen enseñanza superior en las áreas de
-            Agropecuaria y/o Forestal.
+            Somos el nexo de las principales instituciones
+            universitarias en Educación Agropecuaria y Forestal.
+          </Balancer>
+          <Balancer>
+          Facilitamos el intercambio científico y académico para fortalecer la formación y el desarrollo profesional.
           </Balancer>
         </h4>
         <div className="not-prose flex items-center gap-2">
@@ -27,7 +29,7 @@ const CTA = () => {
             <Link href="#">Contactanos</Link>
           </Button>
           <Button variant="link" asChild>
-            <Link href="#">Más información {"->"}</Link>
+            <Link href="/pages/institucional">Más información {"->"}</Link>
           </Button>
         </div>
       </Container>
