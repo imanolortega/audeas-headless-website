@@ -1,18 +1,18 @@
-import { Container, Section } from '../craft';
+import { Container, Section } from '../craft'
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image'
+import Link from 'next/link'
 
-import Logo from "@/public/home-logo-audeas.png";
-import { contentMenu, mainMenu } from '@/menu.config';
-import { getMenuBySlug } from '@/lib/wordpress';
+import Logo from '@/public/home-logo-audeas.png'
+import { contentMenu, mainMenu } from '@/menu.config'
+import { getMenuBySlug } from '@/lib/wordpress'
 
 export const Footer = async () => {
   // const mainMenu = await getMenuBySlug('main')
   // const items = mainMenu.items
 
   return (
-    <footer className='bg-background'>
+    <footer className="bg-background">
       <Section>
         <Container className="grid md:grid-cols-[1.5fr_0.5fr_0.5fr] gap-12">
           <div className="flex flex-col gap-6 not-prose">
@@ -59,5 +59,5 @@ export const Footer = async () => {
         </Container>
       </Section>
     </footer>
-  );
-};
+  )
+}

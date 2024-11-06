@@ -1,8 +1,8 @@
-import * as React from "react";
-import Image from "next/image";
+import * as React from 'react'
+import Image from 'next/image'
 
-import { Section, Container } from "@/components/craft";
-import { Card, CardContent } from "@/components/ui/card";
+import { Section, Container } from '@/components/craft'
+import { Card, CardContent } from '@/components/ui/card'
 
 import {
   Carousel,
@@ -10,9 +10,9 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import Balancer from "react-wrap-balancer";
-import { slidesData } from "@/lib/data";
+} from '@/components/ui/carousel'
+import Balancer from 'react-wrap-balancer'
+import { slidesData } from '@/lib/data'
 
 const FeatureNine = () => {
   return (
@@ -28,15 +28,13 @@ const FeatureNine = () => {
                       <h3 className="md:text-4xl text-3xl md:font-semibold text-white">
                         <Balancer>{slide.title}</Balancer>
                       </h3>
-                      <p className="text-muted">
-                        {slide.description}
-                      </p>
+                      <p className="text-muted">{slide.description}</p>
                     </div>
                     <CardContent className="not-prose flex w-full h-[28rem] items-center justify-center brightness-50">
                       <Image
-                        loading='eager'
+                        loading="eager"
                         placeholder="blur"
-                        blurDataURL='/audeas-asociacion-civil.webp'
+                        blurDataURL="/audeas-asociacion-civil.webp"
                         src={slide.src}
                         alt={slide.title}
                         width={720}
@@ -54,7 +52,7 @@ const FeatureNine = () => {
         </Carousel>
       </Container>
     </Section>
-  );
-};
+  )
+}
 
-export default FeatureNine;
+export default FeatureNine

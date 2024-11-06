@@ -1,11 +1,11 @@
-import * as React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import Logo from "@/public/home-logo-audeas.png";
-import { Button } from "../ui/button";
-import { MobileNav } from "./mobile-nav";
-import { getMenuBySlug } from "@/lib/wordpress";
+import * as React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { cn } from '@/lib/utils'
+import Logo from '@/public/home-logo-audeas.png'
+import { Button } from '../ui/button'
+import { MobileNav } from './mobile-nav'
+import { getMenuBySlug } from '@/lib/wordpress'
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -13,19 +13,19 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuContent,
-} from "@/components/ui/navigation-menu";
+} from '@/components/ui/navigation-menu'
 
 export const Nav = async ({ className, children, id }: NavProps) => {
-  const mainMenu = await getMenuBySlug("main");
-  const items = mainMenu.items;
+  const mainMenu = await getMenuBySlug('main')
+  const items = mainMenu.items
 
   return (
     <nav
       className={cn(
-        "sticky z-50 top-0 bg-background",
-        "border-b",
-        "fade-in",
-        className
+        'sticky z-50 top-0 bg-background',
+        'border-b',
+        'fade-in',
+        className,
       )}
       id={id}
     >
@@ -38,36 +38,31 @@ export const Nav = async ({ className, children, id }: NavProps) => {
           href="/"
         >
           <h2 className="sr-only">Audeas | Asociación Civil</h2>
-          <Image
-            src={Logo}
-            alt="Logo"
-            width={175}
-            height={80}
-          />
+          <Image src={Logo} alt="Logo" width={175} height={80} />
         </Link>
         {children}
         <div className="flex items-center gap-2">
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
               {items.map(({ ID, url, slug, title, type, children }) => {
-                const hasChildren = children && children.length > 0;
+                const hasChildren = children && children.length > 0
 
                 const getUrl = (
                   type: string,
                   url: string,
-                  slug: string
+                  slug: string,
                 ): string => {
-                  return type === "post_type" ? `pages/${slug}` : url;
-                };
-                const path = getUrl(type, url, slug);
+                  return type === 'post_type' ? `pages/${slug}` : url
+                }
+                const path = getUrl(type, url, slug)
 
                 return (
                   <NavigationMenuItem key={ID}>
                     {hasChildren ? (
                       <>
-                        <NavigationMenuTrigger
-                        className="text-base font-normal"
-                        >{title}</NavigationMenuTrigger>
+                        <NavigationMenuTrigger className="text-base font-normal">
+                          {title}
+                        </NavigationMenuTrigger>
                         <NavigationMenuContent>
                           <ul className="grid gap-3 p-4 md:w-[200px] lg:w-[300px]">
                             {children.map((child: any) => (
@@ -77,7 +72,7 @@ export const Nav = async ({ className, children, id }: NavProps) => {
                                     href={getUrl(
                                       child.type,
                                       child.url,
-                                      child.slug
+                                      child.slug,
                                     )}
                                     className="block select-none space-y-1 rounded-md p-3 leading-none no-underline transition-colors hover:bg-accent hover:text-accent-foreground"
                                   >
@@ -100,7 +95,7 @@ export const Nav = async ({ className, children, id }: NavProps) => {
                       </NavigationMenuLink>
                     )}
                   </NavigationMenuItem>
-                );
+                )
               })}
             </NavigationMenuList>
           </NavigationMenu>
@@ -116,5 +111,5 @@ export const Nav = async ({ className, children, id }: NavProps) => {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}

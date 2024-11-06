@@ -1,50 +1,50 @@
-import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
+import type { Metadata } from 'next'
+import { Inter as FontSans } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 
-import "./globals.css";
+import './globals.css'
 
-import { Main } from "@/components/craft";
+import { Main } from '@/components/craft'
 
-import { cn } from "@/lib/utils";
-import { Nav } from "@/components/nav/nav";
-import { Footer } from "@/components/nav/footer";
-import { TopNav } from "@/components/nav/top-nav";
+import { cn } from '@/lib/utils'
+import { Nav } from '@/components/nav/nav'
+import { Footer } from '@/components/nav/footer'
+import { TopNav } from '@/components/nav/top-nav'
 
 const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+  subsets: ['latin'],
+  variable: '--font-sans',
+})
 
 export const metadata: Metadata = {
-  title: "Audeas | Asociación Civil",
+  title: 'Audeas | Asociación Civil',
   description:
-    "Somos una Asociación Civil que agrupa a instituciones universitarias que ofrecen enseñanza superior Agropecuaria y Forestal.",
-  metadataBase: new URL("https://audeas.vercel.app/"),
+    'Somos una Asociación Civil que agrupa a instituciones universitarias que ofrecen enseñanza superior Agropecuaria y Forestal.',
+  metadataBase: new URL('https://audeas.vercel.app/'),
   openGraph: {
-    title: "Audeas | Asociación Civil",
+    title: 'Audeas | Asociación Civil',
     description:
-      "Somos una Asociación Civil que agrupa a instituciones universitarias que ofrecen enseñanza superior Agropecuaria y Forestal.",
-    url: "https://audeas.vercel.app/",
-    siteName: "Audeas",
-    images: "/audeas-asociacion-civil.webp",
-    locale: "es_AR",
-    type: "website",
+      'Somos una Asociación Civil que agrupa a instituciones universitarias que ofrecen enseñanza superior Agropecuaria y Forestal.',
+    url: 'https://audeas.vercel.app/',
+    siteName: 'Audeas',
+    images: '/audeas-asociacion-civil.webp',
+    locale: 'es_AR',
+    type: 'website',
   },
-};
+}
 
-export const revalidate = 3600;
+export const revalidate = 3600
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
       <body
-        className={cn("min-h-screen font-sans antialiased", fontSans.variable)}
+        className={cn('min-h-screen font-sans antialiased', fontSans.variable)}
       >
         <TopNav />
         <Nav />
@@ -53,5 +53,5 @@ export default function RootLayout({
         <Analytics />
       </body>
     </html>
-  );
+  )
 }

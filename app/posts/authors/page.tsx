@@ -1,18 +1,18 @@
-import { getAllAuthors } from "@/lib/wordpress";
-import { Section, Container } from "@/components/craft";
-import Link from "next/link";
-import BackButton from "@/components/back";
-import { Metadata } from "next";
+import { getAllAuthors } from '@/lib/wordpress'
+import { Section, Container } from '@/components/craft'
+import Link from 'next/link'
+import BackButton from '@/components/back'
+import { Metadata } from 'next'
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Todos los autores",
-    description: "Explorar todos los autores en el sitio.",
-  };
+    title: 'Todos los autores',
+    description: 'Explorar todos los autores en el sitio.',
+  }
 }
 
 export default async function Page() {
-  const authors = await getAllAuthors();
+  const authors = await getAllAuthors()
 
   return (
     <Section>
@@ -28,5 +28,5 @@ export default async function Page() {
         </div>
       </Container>
     </Section>
-  );
+  )
 }

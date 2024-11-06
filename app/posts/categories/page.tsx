@@ -1,18 +1,18 @@
-import { getAllCategories } from "@/lib/wordpress";
-import { Section, Container } from "@/components/craft";
-import { Metadata } from "next";
-import Link from "next/link";
-import BackButton from "@/components/back";
+import { getAllCategories } from '@/lib/wordpress'
+import { Section, Container } from '@/components/craft'
+import { Metadata } from 'next'
+import Link from 'next/link'
+import BackButton from '@/components/back'
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Todas las categorías",
-    description: "Explorar todas las categorías.",
-  };
+    title: 'Todas las categorías',
+    description: 'Explorar todas las categorías.',
+  }
 }
 
 export default async function Page() {
-  const categories = await getAllCategories();
+  const categories = await getAllCategories()
 
   return (
     <Section>
@@ -28,5 +28,5 @@ export default async function Page() {
         </div>
       </Container>
     </Section>
-  );
+  )
 }

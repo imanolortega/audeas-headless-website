@@ -3,34 +3,34 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "http",
-        hostname: "localhost",
-        port: "8888",
-        pathname: "/wordpress/wp-content/uploads/**",
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '8888',
+        pathname: '/wordpress/wp-content/uploads/**',
       },
       {
-        protocol: "https",
+        protocol: 'https',
         hostname: process.env.WORDPRESS_HOSTNAME,
-        port: "",
-        pathname: "/**",
+        port: '',
+        pathname: '/**',
       },
       {
-        protocol: "https",
+        protocol: 'https',
         hostname: process.env.WORDPRESS_HOSTNAME,
-        port: "",
-        pathname: "/wp-content/uploads/**",
+        port: '',
+        pathname: '/wp-content/uploads/**',
       },
       {
-        hostname: 'images.unsplash.com'
+        hostname: 'images.unsplash.com',
       },
       {
-        hostname: 'khaki-tiger-476478.hostingersite.com'
+        hostname: 'khaki-tiger-476478.hostingersite.com',
       },
       {
-        hostname: 'keystoneacademic-res.cloudinary.com'
+        hostname: 'keystoneacademic-res.cloudinary.com',
       },
     ],
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig
