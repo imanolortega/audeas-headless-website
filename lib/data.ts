@@ -11,19 +11,19 @@ export const iconGridData = [
   {
     icon: Newspaper,
     title: "Novedades",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua.",
-    href: "/",
+    description: "Novedades de nuestras últimas asambleas, reuniones, congresos y actividades varias",
+    href: "/posts",
   },
   {
     icon: Handshake,
     title: "Relaciones Institucionales",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua.",
+    description: "Principales instituciones universitarias en Educación Agropecuaria y Forestal por regiones",
     href: "/",
   },
   {
     icon: GraduationCap,
     title: "Posgrado",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua.",
+    description: "Promovemos el desarrollo y articulación de carreras y actividades de posgrados en Carreras Agropecuarias y Forestales",
     href: "/",
   },
   {
