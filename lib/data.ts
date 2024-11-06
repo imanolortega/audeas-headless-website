@@ -1,3 +1,51 @@
+import {
+  Handshake,
+  Newspaper,
+  Microscope,
+  Briefcase,
+  GraduationCap,
+  BookOpenText,
+} from "lucide-react";
+
+export const iconGridData = [
+  {
+    icon: Newspaper,
+    title: "Novedades",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua.",
+    href: "/",
+  },
+  {
+    icon: Handshake,
+    title: "Relaciones Institucionales",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua.",
+    href: "/",
+  },
+  {
+    icon: GraduationCap,
+    title: "Posgrado",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua.",
+    href: "/",
+  },
+  {
+    icon: Microscope,
+    title: "Ciencia y Tecnología",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua.",
+    href: "/posts/tags",
+  },
+  {
+    icon: Briefcase,
+    title: "Actividades",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua.",
+    href: "/posts/categories",
+  },
+  {
+    icon: BookOpenText,
+    title: "Documentación útil",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua.",
+    href: "https://github.com/9d8dev/next-wp",
+  },
+];
+
 export const slidesData = [
   {
     title: "Conocé AUDEAS",
