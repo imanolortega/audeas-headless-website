@@ -11,37 +11,41 @@ export const iconGridData = [
   {
     icon: Newspaper,
     title: 'Novedades',
-    description: 'Conocé nuestras últimas novedades',
+    description: 'Conocé nuestras últimas novedades más relevantes',
     href: '/posts',
   },
   {
     icon: Handshake,
     title: 'Relaciones Institucionales',
-    description: 'Principales instituciones universitarias',
+    description:
+      'Nuestros convenios con Instituciones Universitarias de Argentina',
     href: '/',
   },
   {
     icon: GraduationCap,
     title: 'Posgrado',
-    description: 'Promovemos el desarrollo y articulación de carreras',
+    description:
+      'Promovemos el desarrollo y articulación de carreras de posgrado',
     href: '/',
   },
   {
     icon: Microscope,
     title: 'Ciencia y Tecnología',
-    description: 'Lorem ipsum dolor sit amet consectetur adipiscing',
+    description:
+      'Impulsamos la investigación y el desarrollo en ciencia y tecnología',
     href: '/posts/tags',
   },
   {
     icon: Briefcase,
     title: 'Actividades',
-    description: 'Lorem ipsum dolor sit amet consectetur adipiscing',
+    description:
+      'Actividades que fomentan el intercambio de conocimientos y experiencias',
     href: '/posts/categories',
   },
   {
     icon: BookOpenText,
     title: 'Documentación útil',
-    description: 'Lorem ipsum dolor sit amet consectetur adipiscing',
+    description: 'Accedé a documentos, informes y recursos esenciales',
     href: 'https://github.com/9d8dev/next-wp',
   },
 ]
