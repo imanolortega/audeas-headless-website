@@ -44,9 +44,7 @@ export default async function Page() {
         <h1 className="md:pt-12">Autoridades</h1>
       </Container>
       <Container>
-        <h2 className="font-bold text-center text-2xl font-bold mb-6">
-          Presidencia
-        </h2>
+        <h2 className="!font-bold text-center text-2xl mb-6">Presidencia</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center mx-auto px-4">
           <PersonCard
             person={{
@@ -67,7 +65,7 @@ export default async function Page() {
         </div>
       </Container>
       <Container>
-        <h2 className='text-center'>Vocales</h2>
+        <h2 className="text-center">Vocales</h2>
         <PersonGrid people={people} />
       </Container>
     </Section>
