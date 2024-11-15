@@ -6,29 +6,34 @@ import PersonCard from '@/components/persons/person-card'
 export default async function Page() {
   const people = [
     {
-      image: '/path/to/noemi_bejarano.jpg',
+      image: '/person-image.jpeg',
       name: 'Dra. Noemí Bejarano',
       role: 'Vocal Regional - Región NOA',
+      size: 'w-64 h-64',
     },
     {
-      image: '/path/to/esteban_jockers.jpg',
+      image: '/person-image.jpeg',
       name: 'Ing. Esteban Jockers',
       role: 'Vocal Regional - Región Cuyo - Patagonia',
+      size: 'w-64 h-64',
     },
     {
-      image: '/path/to/lia_molas.jpg',
+      image: '/person-image.jpeg',
       name: 'Dra. Lía Molas',
       role: 'Vocal Regional - Región Centro',
+      size: 'w-64 h-64',
     },
     {
-      image: '/path/to/mario_urbani.jpg',
+      image: '/person-image.jpeg',
       name: 'Ing. Agr. Mario Urbani',
       role: 'Vocal Regional - Región NEA',
+      size: 'w-64 h-64',
     },
     {
-      image: '/path/to/elena_craig.jpg',
+      image: '/person-image.jpeg',
       name: 'Ing. Agr. Elena Craig',
       role: 'Vocal Regional - Región Pampeana',
+      size: 'w-64 h-64',
     },
   ]
 
@@ -39,20 +44,24 @@ export default async function Page() {
         <h1 className="md:pt-12">Autoridades</h1>
       </Container>
       <Container>
-        <h2 className="text-center text-2xl font-bold mb-6">Presidencia</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
+        <h2 className="font-bold text-center text-2xl font-bold mb-6">
+          Presidencia
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center mx-auto px-4">
           <PersonCard
             person={{
-              image: '/path/to/myriam_villarreal.jpg',
+              image: '/myriam-villarreal.jpg',
               name: 'Dra. Myriam Villarreal',
-              role: 'Presidente',
+              role: 'Presidente. Decana de la Facultad de Agronomía y Agroindustrias de la UNSE.',
+              size: 'w-72 h-64',
             }}
           />
           <PersonCard
             person={{
-              image: '/path/to/jorge_dutto.jpg',
+              image: '/jorge-dutto.jpeg',
               name: 'Ing. Jorge Dutto',
-              role: 'Vicepresidente.',
+              role: 'Vicepresidente. Decano de la Facultad de Ciencias Agropecuarias de la UNC.',
+              size: 'w-72 h-64',
             }}
           />
         </div>
