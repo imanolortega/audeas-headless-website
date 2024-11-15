@@ -50,7 +50,7 @@ export function MobileNav() {
                 {key.charAt(0).toUpperCase() + key.slice(1)}
               </MobileLink>
             ))}
-            <h3 className="text-small pt-6">Contacto</h3>
+            <h3 className="text-small pt-6">Información</h3>
             <Separator />
             {Object.entries(contentMenu).map(([key, href]) => (
               <MobileLink key={key} href={href} onOpenChange={setOpen}>

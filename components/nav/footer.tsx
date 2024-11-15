@@ -40,7 +40,7 @@ export const Footer = async () => {
             ))}
           </div>
           <div className="flex flex-col gap-2 text-sm">
-            <h4 className="font-medium text-base">Contacto</h4>
+            <h4 className="font-medium text-base">Información</h4>
             {Object.entries(contentMenu).map(([key, href]) => (
               <Link
                 className="hover:underline underline-offset-4"

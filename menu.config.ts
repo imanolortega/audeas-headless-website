@@ -6,5 +6,6 @@ export const mainMenu = {
 }
 
 export const contentMenu = {
-  Contactanos: '/',
+  Contenidos: 'Contenidos',
+  Contacto: '/',
 }

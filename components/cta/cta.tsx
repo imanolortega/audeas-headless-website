@@ -27,7 +27,7 @@ const CTA = () => {
         </h4>
         <div className="not-prose flex items-center gap-2">
           <Button className="bg-audeas text-white hover:bg-audeas/90" asChild>
-            <Link href="#">Contactanos</Link>
+            <Link href="#">Contacto</Link>
           </Button>
           <Button variant="link" asChild>
             <Link href="/pages/institucional">Más información {'->'}</Link>
