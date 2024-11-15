@@ -103,8 +103,8 @@ export const Nav = async ({ className, children, id }: NavProps) => {
             asChild
             className="hidden sm:flex bg-audeas hover:bg-audeas/95 text-base"
           >
-            <Link className="text-white font-semibold" href="/">
-              Recursos
+            <Link className="text-white font-semibold" href="/pages/contenidos">
+              Contenidos
             </Link>
           </Button>
           <MobileNav />

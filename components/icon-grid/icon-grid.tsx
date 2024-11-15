@@ -1,7 +1,16 @@
-import { iconGridData } from '@/lib/data'
+import { LucideIcon } from 'lucide-react'
 import Link from 'next/link'
 
-export const IconGrid = () => {
+interface IconGridProps {
+  iconGridData: Array<{
+    icon: LucideIcon
+    href: string
+    title: string
+    description: string
+  }>
+}
+
+export const IconGrid: React.FC<IconGridProps> = ({ iconGridData }) => {
   return (
     <article className="prose-m-none">
       <div className="grid md:grid-cols-3 gap-4 not-prose">

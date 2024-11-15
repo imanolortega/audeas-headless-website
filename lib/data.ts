@@ -1,13 +1,15 @@
 import {
-  Handshake,
-  Newspaper,
-  Microscope,
-  Briefcase,
-  GraduationCap,
   BookOpenText,
+  Briefcase,
+  FileText,
+  GraduationCap,
+  Handshake,
+  Megaphone,
+  Microscope,
+  Newspaper,
 } from 'lucide-react'
 
-export const iconGridData = [
+export const homeGridData = [
   {
     icon: Newspaper,
     title: 'Novedades',
@@ -29,23 +31,42 @@ export const iconGridData = [
     href: '/',
   },
   {
-    icon: Microscope,
-    title: 'Ciencia y Tecnología',
-    description:
-      'Impulsamos la investigación y el desarrollo en ciencia y tecnología',
+    icon: FileText,
+    title: 'Actas',
+    description: 'Accedé a todas las actas desde nuestra fundación',
     href: '/posts/tags',
   },
   {
-    icon: Briefcase,
-    title: 'Actividades',
-    description:
-      'Actividades que fomentan el intercambio de conocimientos y experiencias',
+    icon: Megaphone,
+    title: 'Declaraciones',
+    description: 'Declaraciones para descargar de los últimos años',
     href: '/posts/categories',
   },
   {
     icon: BookOpenText,
-    title: 'Documentación útil',
-    description: 'Accedé a documentos, informes y recursos esenciales',
+    title: 'Estatutos',
+    description: 'Estatutos vigentes y pasados de nuestra institución',
+    href: 'https://github.com/9d8dev/next-wp',
+  },
+]
+
+export const contentsGridData = [
+  {
+    icon: FileText,
+    title: 'Actas',
+    description: 'Accedé a todas las actas desde nuestra fundación',
+    href: '/posts/tags',
+  },
+  {
+    icon: Megaphone,
+    title: 'Declaraciones',
+    description: 'Declaraciones para descargar de los últimos años',
+    href: '/posts/categories',
+  },
+  {
+    icon: BookOpenText,
+    title: 'Estatutos',
+    description: 'Estatutos vigentes y pasados de nuestra institución',
     href: 'https://github.com/9d8dev/next-wp',
   },
 ]

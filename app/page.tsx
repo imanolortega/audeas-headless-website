@@ -3,6 +3,7 @@ import Balancer from 'react-wrap-balancer'
 
 import { getAllPosts, getPageBySlug } from '@/lib/wordpress'
 
+import { homeGridData } from '@/lib/data'
 import { IconGrid } from '@/components/icon-grid/icon-grid'
 import CTA from '@/components/cta/cta'
 import FeatureNine from '@/components/feature/feature'
@@ -17,7 +18,7 @@ export default async function Home() {
       <FeatureNine />
       <Section className="md:pb-10 md:pt-0">
         <Container>
-          <IconGrid />
+          <IconGrid iconGridData={homeGridData} />
         </Container>
       </Section>
       <CTA />
