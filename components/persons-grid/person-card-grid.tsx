@@ -4,6 +4,7 @@ interface Person {
   image: string
   name: string
   role: string
+  size: string
 }
 
 interface PersonGridProps {
