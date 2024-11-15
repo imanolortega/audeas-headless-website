@@ -1,11 +1,9 @@
 import {
   BookOpenText,
-  Briefcase,
   FileText,
   GraduationCap,
   Handshake,
   Megaphone,
-  Microscope,
   Newspaper,
 } from 'lucide-react'
 
@@ -34,19 +32,19 @@ export const homeGridData = [
     icon: FileText,
     title: 'Actas',
     description: 'Accedé a todas las actas desde nuestra fundación',
-    href: '/posts/tags',
+    href: '/pages/contenidos/actas',
   },
   {
     icon: Megaphone,
     title: 'Declaraciones',
     description: 'Declaraciones para descargar de los últimos años',
-    href: '/posts/categories',
+    href: '/pages/contenidos/declaraciones',
   },
   {
     icon: BookOpenText,
     title: 'Estatutos',
     description: 'Estatutos vigentes y pasados de nuestra institución',
-    href: 'https://github.com/9d8dev/next-wp',
+    href: '/pages/contenidos/estatutos',
   },
 ]
 
@@ -55,19 +53,19 @@ export const contentsGridData = [
     icon: FileText,
     title: 'Actas',
     description: 'Accedé a todas las actas desde nuestra fundación',
-    href: '/posts/tags',
+    href: '/pages/contenidos/actas',
   },
   {
     icon: Megaphone,
     title: 'Declaraciones',
     description: 'Declaraciones para descargar de los últimos años',
-    href: '/posts/categories',
+    href: '/pages/contenidos/declaraciones',
   },
   {
     icon: BookOpenText,
     title: 'Estatutos',
     description: 'Estatutos vigentes y pasados de nuestra institución',
-    href: 'https://github.com/9d8dev/next-wp',
+    href: '/pages/contenidos/estatutos',
   },
 ]
 
