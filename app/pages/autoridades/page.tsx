@@ -67,7 +67,7 @@ export default async function Page() {
         </div>
       </Container>
       <Container>
-        <h2>Vocales</h2>
+        <h2 className='text-center'>Vocales</h2>
         <PersonGrid people={people} />
       </Container>
     </Section>
