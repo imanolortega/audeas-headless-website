@@ -8,6 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import Link from 'next/link'
 
 interface TableProps {
   data: Array<{
@@ -34,7 +35,9 @@ export function TableDemo({ data, caption }: TableProps) {
           <TableRow key={item.año}>
             <TableCell className="font-medium">{item.año}</TableCell>
             <TableCell>{item.cantidad}</TableCell>
-            <TableCell className="text-right">{item.link}</TableCell>
+            <TableCell className="text-right">
+              <Link href={'#'}>Descargar</Link>
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>
