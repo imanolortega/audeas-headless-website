@@ -50,7 +50,7 @@ export default async function Page() {
       <Container>
         <TableDemo
           data={data}
-          caption="Accedé a todas las actas desde nuestra fundación"
+          caption="Estatutos vigentes y pasados de nuestra institución"
         />
       </Container>
     </Section>
