@@ -21,7 +21,13 @@ export default function CarouselSpacing() {
   ]
 
   return (
-    <Carousel className="w-full max-w-full">
+    <Carousel
+      opts={{
+        align: 'start',
+        loop: true,
+      }}
+      className="w-full max-w-full"
+    >
       <CarouselContent className="flex -ml-1 gap-1">
         {images.map((image, index) => (
           <CarouselItem
