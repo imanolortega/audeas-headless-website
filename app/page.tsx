@@ -8,6 +8,7 @@ import { IconGrid } from '@/components/icon-grid/icon-grid'
 import CTA from '@/components/cta/cta'
 import FeatureNine from '@/components/feature/feature'
 import PostCard from '@/components/posts/post-card'
+import Logos from '@/components/logos/logos'
 
 export default async function Home() {
   const posts = await getAllPosts()
@@ -22,6 +23,7 @@ export default async function Home() {
         </Container>
       </Section>
       <CTA />
+      <Logos />
       <Section className="bg-accent md:pt-0 md:pb-8">
         <Container>
           <LatestsPost posts={posts} />
