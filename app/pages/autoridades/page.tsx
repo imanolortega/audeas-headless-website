@@ -1,36 +1,36 @@
 import { Section, Container } from '@/components/craft'
 import BackButton from '@/components/back'
-import PersonGrid from '@/components/persons-grid/person-card-grid'
 import PersonCard from '@/components/persons/person-card'
+import PersonGrid from '@/components/persons-grid/person-card-grid'
 
 export default async function Page() {
   const people = [
     {
-      image: '/person-image.jpeg',
+      image: '/noemi-bejarano.jpg',
       name: 'Dra. Noemí Bejarano',
       role: 'Vocal Regional - Región NOA',
       size: 'w-64 h-64',
     },
     {
-      image: '/person-image.jpeg',
+      image: '/esteban-jockers.jpg',
       name: 'Ing. Esteban Jockers',
       role: 'Vocal Regional - Región Cuyo - Patagonia',
       size: 'w-64 h-64',
     },
     {
-      image: '/person-image.jpeg',
+      image: '/lia-molas.png',
       name: 'Dra. Lía Molas',
       role: 'Vocal Regional - Región Centro',
       size: 'w-64 h-64',
     },
     {
-      image: '/person-image.jpeg',
+      image: '/mario-urbani.jpg',
       name: 'Ing. Agr. Mario Urbani',
       role: 'Vocal Regional - Región NEA',
       size: 'w-64 h-64',
     },
     {
-      image: '/person-image.jpeg',
+      image: '/elena-craig.jpeg',
       name: 'Ing. Agr. Elena Craig',
       role: 'Vocal Regional - Región Pampeana',
       size: 'w-64 h-64',
