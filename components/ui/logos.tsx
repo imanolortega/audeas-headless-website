@@ -11,12 +11,13 @@ import Link from 'next/link'
 
 export default function CarouselSpacing() {
   const images = [
-    { src: '/fauba-audeas.jpg', url: '#' },
-    { src: '/uncaus-audeas.jpg', url: '#' },
-    { src: '/unicen-azul-audeas.jpg', url: '#' },
-    { src: '/uncoma-audeas.jpg', url: '#' },
+    { src: '/fauba-audeas.jpg', url: 'https://www.agro.uba.ar/' },
+    { src: '/uncaus-audeas.jpg', url: 'https://uncaus.edu.ar/' },
+    { src: '/unicen-azul-audeas.jpg', url: 'https://www.faa.unicen.edu.ar/' },
+    { src: '/uncoma-audeas.jpg', url: 'https://facaweb.uncoma.edu.ar/' },
     { src: '/uncpba-audeas.jpg', url: '#' },
-    { src: '/uner-audeas.jpg', url: '#' },
+    { src: '/uner-audeas.jpg', url: 'https://fca.uner.edu.ar/' },
+    { src: '/unr-audeas.png', url: 'https://fcagr.unr.edu.ar/' },
   ]
 
   return (
