@@ -6,6 +6,7 @@ interface Person {
   name: string
   role: string
   size: string
+  description?: string
 }
 
 export default function PersonCard({ person }: { person: Person }) {
@@ -31,7 +32,8 @@ export default function PersonCard({ person }: { person: Person }) {
           {person.name}
         </div>
         <div className="text-sm text-muted-foreground flex-grow">
-          {person.role}
+          <p>{person.role}</p>
+          {person.description && <p>{person.description}</p>}
         </div>
       </div>
     </div>
