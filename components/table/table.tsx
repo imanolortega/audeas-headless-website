@@ -36,7 +36,7 @@ export function TableDemo({ data, caption }: TableProps) {
             <TableCell className="font-medium">{item.año}</TableCell>
             <TableCell>{item.cantidad}</TableCell>
             <TableCell className="text-right">
-              <Link href={'#'}>Descargar</Link>
+              <Link href={`/${item.link}`}>Descargar</Link>
             </TableCell>
           </TableRow>
         ))}

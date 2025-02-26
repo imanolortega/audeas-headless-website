@@ -6,7 +6,7 @@ const data = [
   {
     año: '2018',
     cantidad: '3',
-    link: '#',
+    link: 'pages/contenidos/2018-2',
   },
   {
     año: '2019',
