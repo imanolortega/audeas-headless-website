@@ -20,7 +20,7 @@ const data = [
   },
   {
     año: '2017',
-    cantidad: '',
+    cantidad: '2',
     link: '#',
   },
   {
