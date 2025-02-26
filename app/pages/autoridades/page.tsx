@@ -55,9 +55,9 @@ export default async function Page() {
             person={{
               image: '/myriam-villarreal.jpg',
               name: 'Dra. Myriam Villarreal',
-              role: 'Presidente. ',
+              role: 'Presidente ',
               description:
-                'Decana de la Facultad de Agronomía y Agroindustrias de la UNSE.',
+                'Decana de la Facultad de Agronomía y Agroindustrias de la UNSE',
               size: 'w-72 h-64',
             }}
           />
@@ -65,9 +65,9 @@ export default async function Page() {
             person={{
               image: '/jorge-dutto.jpeg',
               name: 'Ing. Jorge Dutto',
-              role: 'Vicepresidente. ',
+              role: 'Vicepresidente ',
               description:
-                'Decano de la Facultad de Ciencias Agropecuarias de la UNC.',
+                'Decano de la Facultad de Ciencias Agropecuarias de la UNC',
               size: 'w-72 h-64',
             }}
           />
