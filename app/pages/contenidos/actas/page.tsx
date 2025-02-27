@@ -200,7 +200,7 @@ export default async function Page() {
     <Section>
       <Container className="md:pb-2">
         <BackButton />
-        <h1 className="md:pt-12">Actas</h1>
+        <h1 className="md:pt-12 sm:pt-6">Actas</h1>
       </Container>
       <Container>
         <TableDemo
