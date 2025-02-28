@@ -130,7 +130,7 @@ const data = [
   },
   {
     año: '1994',
-    cantidad: '1',
+    cantidad: '3',
     link: 'pages/contenidos/1994-descargar',
   },
   {
@@ -140,12 +140,12 @@ const data = [
   },
   {
     año: '1992',
-    cantidad: '1',
+    cantidad: '2',
     link: 'pages/contenidos/1992-descargar',
   },
   {
     año: '1991',
-    cantidad: '1',
+    cantidad: '2',
     link: 'pages/contenidos/1991-descargar',
   },
   {
