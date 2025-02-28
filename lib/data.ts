@@ -19,14 +19,14 @@ export const homeGridData = [
     title: 'Relaciones Institucionales',
     description:
       'Nuestros convenios con Instituciones Universitarias de Argentina',
-    href: '/',
+    href: '/pages/convenios',
   },
   {
     icon: GraduationCap,
-    title: 'Posgrado',
+    title: 'Socios',
     description:
-      'Promovemos el desarrollo y articulación de carreras de posgrado',
-    href: '/',
+      'Promovemos el desarrollo y articulación con otras Instituciones',
+    href: '/pages/socios',
   },
   {
     icon: FileText,
@@ -44,7 +44,7 @@ export const homeGridData = [
     icon: BookOpenText,
     title: 'Estatutos',
     description: 'Estatutos vigentes y pasados de nuestra institución',
-    href: '/pages/contenidos/estatutos',
+    href: '/pages/estatutos',
   },
 ]
 
@@ -65,7 +65,7 @@ export const contentsGridData = [
     icon: BookOpenText,
     title: 'Estatutos',
     description: 'Estatutos vigentes y pasados de nuestra institución',
-    href: '/pages/contenidos/estatutos',
+    href: '/pages/estatutos',
   },
 ]
 
