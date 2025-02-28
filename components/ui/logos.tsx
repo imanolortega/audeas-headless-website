@@ -32,7 +32,7 @@ export default function CarouselSpacing() {
         {images.map((image, index) => (
           <CarouselItem
             key={index}
-            className="pl-1 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6"
+            className="pl-1 basis-full sm:basis-1/3 md:basis-1/4 lg:basis-1/6"
           >
             <div className="p-1">
               <Card>

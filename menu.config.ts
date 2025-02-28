@@ -2,7 +2,7 @@
 export const mainMenu = {
   Institucional: '/pages/institucional',
   Novedades: '/posts',
-  Socios: '/socios',
+  Socios: '/pages/socios',
   Movilidad: '/pages/movilidad-virtual-en-el-marco-de-audeas',
 }
 
