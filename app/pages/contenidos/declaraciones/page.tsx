@@ -4,40 +4,26 @@ import { TableDemo } from '@/components/table/table'
 
 const data = [
   {
-    año: '2018',
-    cantidad: '3',
-    link: '#',
-  },
-  {
     año: '2019',
     cantidad: '2',
-    link: '#',
+    link: 'pages/contenidos/2019-declaraciones',
   },
   {
-    año: '2020',
-    cantidad: '2',
-    link: '#',
+    año: '2017',
+    cantidad: '3',
+    link: 'pages/contenidos/2017-declaraciones',
+  },
+
+  {
+    año: '2016',
+    cantidad: '3',
+    link: 'pages/contenidos/2016-declaraciones',
   },
   {
-    año: '2021',
-    cantidad: '2',
-    link: '#',
-  },
-  {
-    año: '2022',
+    año: '2015',
     cantidad: '1',
-    link: '#',
-  },
-  {
-    año: '2023',
-    cantidad: '1',
-    link: '#',
-  },
-  {
-    año: '2024',
-    cantidad: '1',
-    link: '#',
-  },
+    link: 'pages/contenidos/2015-declaraciones',
+  }
 ]
 
 export default async function Page() {
