@@ -69,11 +69,6 @@ const data = [
     link: 'pages/contenidos/2008-descargar',
   },
   {
-    año: '2007',
-    cantidad: '3',
-    link: 'pages/contenidos/2007-descargar',
-  },
-  {
     año: '2006',
     cantidad: '3',
     link: 'pages/contenidos/2006-descargar',
@@ -159,11 +154,6 @@ const data = [
     link: 'pages/contenidos/1990-descargar',
   },
   {
-    año: '1989',
-    cantidad: '1',
-    link: 'pages/contenidos/1989-descargar',
-  },
-  {
     año: '1988',
     cantidad: '1',
     link: 'pages/contenidos/1988-descargar',
@@ -172,11 +162,6 @@ const data = [
     año: '1987',
     cantidad: '1',
     link: 'pages/contenidos/1987-descargar',
-  },
-  {
-    año: '1986',
-    cantidad: '1',
-    link: 'pages/contenidos/1986-descargar',
   },
   {
     año: '1985',
