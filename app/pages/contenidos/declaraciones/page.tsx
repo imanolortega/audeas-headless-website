@@ -23,7 +23,7 @@ const data = [
     año: '2015',
     cantidad: '1',
     link: 'pages/contenidos/2015-declaraciones',
-  }
+  },
 ]
 
 export default async function Page() {
