@@ -23,10 +23,10 @@ export const homeGridData = [
   },
   {
     icon: GraduationCap,
-    title: 'Socios',
+    title: 'Posgrados',
     description:
-      'Promovemos el desarrollo y articulación con otras Instituciones',
-    href: '/pages/socios',
+      'Promovemos el desarrollo y articulación de carreras de posgrado',
+    href: '/pages/posgrados',
   },
   {
     icon: FileText,
