@@ -6,35 +6,35 @@ import PersonGrid from '@/components/persons-grid/person-card-grid'
 export default async function Page() {
   const people = [
     {
-      image: '/noemi-bejarano.jpg',
+      image: '/staff/noemi-bejarano.jpg',
       name: 'Dra. Noemí Bejarano',
       role: 'Vocal Regional',
       description: 'Región NOA',
       size: 'w-64 h-64',
     },
     {
-      image: '/esteban-jockers.jpg',
+      image: '/staff/esteban-jockers.jpg',
       name: 'Ing. Esteban Jockers',
       role: 'Vocal Regional',
       description: 'Región Cuyo - Patagonia',
       size: 'w-64 h-64',
     },
     {
-      image: '/lia-molas.png',
+      image: '/staff/lia-molas.png',
       name: 'Dra. Lía Molas',
       role: 'Vocal Regional',
       description: 'Región Centro',
       size: 'w-64 h-64',
     },
     {
-      image: '/mario-urbani.jpg',
+      image: '/staff/mario-urbani.jpg',
       name: 'Ing. Agr. Mario Urbani',
       role: 'Vocal Regional',
       description: 'Región NEA',
       size: 'w-64 h-64',
     },
     {
-      image: '/elena-craig.jpeg',
+      image: '/staff/elena-craig.jpeg',
       name: 'Ing. Agr. Elena Craig',
       role: 'Vocal Regional',
       description: 'Región Pampeana',
@@ -53,7 +53,7 @@ export default async function Page() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center mx-auto px-4">
           <PersonCard
             person={{
-              image: '/myriam-villarreal.jpg',
+              image: '/staff/myriam-villarreal.jpg',
               name: 'Dra. Myriam Villarreal',
               role: 'Presidente ',
               description:
@@ -63,7 +63,7 @@ export default async function Page() {
           />
           <PersonCard
             person={{
-              image: '/jorge-dutto.jpeg',
+              image: '/staff/jorge-dutto.jpeg',
               name: 'Ing. Jorge Dutto',
               role: 'Vicepresidente ',
               description:

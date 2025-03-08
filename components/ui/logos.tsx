@@ -11,30 +11,39 @@ import Link from 'next/link'
 
 export default function CarouselSpacing() {
   const images = [
-    { src: '/fauba-audeas.jpg', url: 'https://www.agro.uba.ar/' },
-    { src: '/unca-audeas.jpg', url: 'https://agrarias.unca.edu.ar/' },
-    { src: '/uncpba-audeas.jpg', url: '#' },
-    { src: '/uncaus-audeas.jpg', url: 'https://uncaus.edu.ar/' },
-    { src: '/uncoma-audeas.jpg', url: 'https://facaweb.uncoma.edu.ar/' },
-    { src: '/unc-audeas.jpg', url: 'https://agro.unc.edu.ar/' },
-    { src: '/uncuyo-audeas.jpg', url: 'https://fca.uncuyo.edu.ar/' },
-    { src: '/uner-audeas.jpg', url: 'https://fca.uner.edu.ar/' },
-    { src: '/unf-audeas.jpg', url: 'https://frn.unf.edu.ar/' },
-    { src: '/unju-audeas.jpg', url: 'https://www.fca.unju.edu.ar/' },
-    { src: '/unlpam-audeas.jpg', url: 'https://www.agro.unlpam.edu.ar' },
-    { src: '/unlp-audeas.jpg', url: 'https://www.agro.unlp.edu.ar/' },
+    { src: '/partners/fauba-audeas.jpg', url: 'https://www.agro.uba.ar/' },
+    { src: '/partners/unca-audeas.jpg', url: 'https://agrarias.unca.edu.ar/' },
+    { src: '/partners/uncpba-audeas.jpg', url: '#' },
+    { src: '/partners/uncaus-audeas.jpg', url: 'https://uncaus.edu.ar/' },
     {
-      src: '/unlar-audeas.jpg',
+      src: '/partners/uncoma-audeas.jpg',
+      url: 'https://facaweb.uncoma.edu.ar/',
+    },
+    { src: '/partners/unc-audeas.jpg', url: 'https://agro.unc.edu.ar/' },
+    { src: '/partners/uncuyo-audeas.jpg', url: 'https://fca.uncuyo.edu.ar/' },
+    { src: '/partners/uner-audeas.jpg', url: 'https://fca.uner.edu.ar/' },
+    { src: '/partners/unf-audeas.jpg', url: 'https://frn.unf.edu.ar/' },
+    { src: '/partners/unju-audeas.jpg', url: 'https://www.fca.unju.edu.ar/' },
+    {
+      src: '/partners/unlpam-audeas.jpg',
+      url: 'https://www.agro.unlpam.edu.ar',
+    },
+    { src: '/partners/unlp-audeas.jpg', url: 'https://www.agro.unlp.edu.ar/' },
+    {
+      src: '/partners/unlar-audeas.jpg',
       url: 'https://www.unlar.edu.ar/index.php/unlar/departamentos-academicos/ciencias-y-tecnologias-aplicadas-a-la-produccion-al-ambiente-y-al-urbanismo',
     },
     {
-      src: '/undec-audeas.jpg',
+      src: '/partners/undec-audeas.jpg',
       url: 'https://www.undec.edu.ar/ingenieria-agronomica/',
     },
-    { src: '/unicen-azul-audeas.jpg', url: 'https://www.faa.unicen.edu.ar/' },
-    { src: '/uncpba-audeas.jpg', url: '#' },
-    { src: '/uner-audeas.jpg', url: 'https://fca.uner.edu.ar/' },
-    { src: '/unr-audeas.png', url: 'https://fcagr.unr.edu.ar/' },
+    {
+      src: '/partners/unicen-azul-audeas.jpg',
+      url: 'https://www.faa.unicen.edu.ar/',
+    },
+    { src: '/partners/uncpba-audeas.jpg', url: '#' },
+    { src: '/partners/uner-audeas.jpg', url: 'https://fca.uner.edu.ar/' },
+    { src: '/partners/unr-audeas.png', url: 'https://fcagr.unr.edu.ar/' },
   ]
 
   return (
