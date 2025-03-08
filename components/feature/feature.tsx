@@ -30,7 +30,7 @@ const FeatureNine = () => {
                       </h3>
                       <p className="text-muted">{slide.description}</p>
                     </div>
-                    <CardContent className="not-prose flex w-full h-[28rem] items-center justify-center brightness-60">
+                    <CardContent className="not-prose flex w-full h-[28rem] items-center justify-center brightness-[0.6]">
                       <Image
                         loading="eager"
                         placeholder="blur"
