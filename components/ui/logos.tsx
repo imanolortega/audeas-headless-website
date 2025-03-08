@@ -37,7 +37,7 @@ export default function CarouselSpacing() {
       src: '/partners/undec-audeas.jpg',
       url: 'https://www.undec.edu.ar/ingenieria-agronomica/',
     },
-    { src: '/partners/unl-audeas.png', url: 'https://www.fca.unl.edu.ar/' },
+    { src: '/partners/unl-audeas.jpg', url: 'https://www.fca.unl.edu.ar/' },
     {
       src: '/partners/unicen-azul-audeas.jpg',
       url: 'https://www.faa.unicen.edu.ar/',
