@@ -11,47 +11,98 @@ import Link from 'next/link'
 
 export default function CarouselSpacing() {
   const images = [
-    { src: '/partners/fauba-audeas.jpg', url: 'https://www.agro.uba.ar/' },
-    { src: '/partners/unca-audeas.jpg', url: 'https://agrarias.unca.edu.ar/' },
-    { src: '/partners/uncpba-audeas.jpg', url: '#' },
-    { src: '/partners/uncaus-audeas.jpg', url: 'https://uncaus.edu.ar/' },
     {
+      id: 1,
+      src: '/partners/fauba-audeas.jpg',
+      url: 'https://www.agro.uba.ar/',
+    },
+    {
+      id: 2,
+      src: '/partners/unca-audeas.jpg',
+      url: 'https://agrarias.unca.edu.ar/',
+    },
+    { id: 3, src: '/partners/uncpba-audeas.jpg', url: '#' },
+    {
+      id: 4,
+      src: '/partners/uncaus-audeas.jpg',
+      url: 'https://uncaus.edu.ar/',
+    },
+    {
+      id: 5,
       src: '/partners/uncoma-audeas.jpg',
       url: 'https://facaweb.uncoma.edu.ar/',
     },
-    { src: '/partners/unc-audeas.jpg', url: 'https://agro.unc.edu.ar/' },
-    { src: '/partners/uncuyo-audeas.jpg', url: 'https://fca.uncuyo.edu.ar/' },
-    { src: '/partners/uner-audeas.jpg', url: 'https://fca.uner.edu.ar/' },
-    { src: '/partners/unf-audeas.jpg', url: 'https://frn.unf.edu.ar/' },
-    { src: '/partners/unju-audeas.jpg', url: 'https://www.fca.unju.edu.ar/' },
+    { id: 6, src: '/partners/unc-audeas.jpg', url: 'https://agro.unc.edu.ar/' },
     {
+      id: 7,
+      src: '/partners/uncuyo-audeas.jpg',
+      url: 'https://fca.uncuyo.edu.ar/',
+    },
+    {
+      id: 8,
+      src: '/partners/uner-audeas.jpg',
+      url: 'https://fca.uner.edu.ar/',
+    },
+    { id: 9, src: '/partners/unf-audeas.jpg', url: 'https://frn.unf.edu.ar/' },
+    {
+      id: 10,
+      src: '/partners/unju-audeas.jpg',
+      url: 'https://www.fca.unju.edu.ar/',
+    },
+    {
+      id: 11,
       src: '/partners/unlpam-audeas.png',
       url: 'https://www.agro.unlpam.edu.ar',
     },
-    { src: '/partners/unlp-audeas.jpg', url: 'https://www.agro.unlp.edu.ar/' },
     {
+      id: 12,
+      src: '/partners/unlp-audeas.jpg',
+      url: 'https://www.agro.unlp.edu.ar/',
+    },
+    {
+      id: 13,
       src: '/partners/unlar-audeas.jpg',
       url: 'https://www.unlar.edu.ar/index.php/unlar/departamentos-academicos/ciencias-y-tecnologias-aplicadas-a-la-produccion-al-ambiente-y-al-urbanismo',
     },
     {
+      id: 14,
       src: '/partners/undec-audeas.jpg',
       url: 'https://www.undec.edu.ar/ingenieria-agronomica/',
     },
-    { src: '/partners/unl-audeas.jpg', url: 'https://www.fca.unl.edu.ar/' },
     {
+      id: 15,
+      src: '/partners/unl-audeas.jpg',
+      url: 'https://www.fca.unl.edu.ar/',
+    },
+    {
+      id: 16,
       src: '/partners/unicen-azul-audeas.jpg',
       url: 'https://www.faa.unicen.edu.ar/',
     },
-    { src: '/partners/uncpba-audeas.jpg', url: '#' },
-    { src: '/partners/uner-audeas.jpg', url: 'https://fca.uner.edu.ar/' },
-    { src: '/partners/unr-audeas.png', url: 'https://fcagr.unr.edu.ar/' },
-    { src: '/partners/unlz-audeas.png', url: 'https://agrarias.unlz.edu.ar/' },
+    { id: 17, src: '/partners/uncpba-audeas.jpg', url: '#' },
     {
-      src: '/partners/unlu-audeas.png',
+      id: 18,
+      src: '/partners/uner-audeas.jpg',
+      url: 'https://fca.uner.edu.ar/',
+    },
+    {
+      id: 19,
+      src: '/partners/unr-audeas.png',
+      url: 'https://fcagr.unr.edu.ar/',
+    },
+    {
+      id: 20,
+      src: '/partners/unlz-audeas.jpg',
+      url: 'https://agrarias.unlz.edu.ar/',
+    },
+    {
+      id: 21,
+      src: '/partners/unlu-audeas.jpg',
       url: 'https://www.unlu.edu.ar/dpto-tecnologia.html',
     },
     {
-      src: '/partners/unmdp-audeas.png',
+      id: 22,
+      src: '/partners/unmdp-audeas.jpg',
       url: 'https://agrarias.campus.mdp.edu.ar/',
     },
   ]
