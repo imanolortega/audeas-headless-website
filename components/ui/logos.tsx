@@ -50,6 +50,10 @@ export default function CarouselSpacing() {
       src: '/partners/unlu-audeas.png',
       url: 'https://www.unlu.edu.ar/dpto-tecnologia.html',
     },
+    {
+      src: '/partners/unmdp-audeas.png',
+      url: 'https://agrarias.campus.mdp.edu.ar/',
+    },
   ]
 
   return (
