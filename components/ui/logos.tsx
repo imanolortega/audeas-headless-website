@@ -12,9 +12,26 @@ import Link from 'next/link'
 export default function CarouselSpacing() {
   const images = [
     { src: '/fauba-audeas.jpg', url: 'https://www.agro.uba.ar/' },
+    { src: '/unca-audeas.jpg', url: 'https://agrarias.unca.edu.ar/' },
+    { src: '/uncpba-audeas.jpg', url: '#' },
     { src: '/uncaus-audeas.jpg', url: 'https://uncaus.edu.ar/' },
-    { src: '/unicen-azul-audeas.jpg', url: 'https://www.faa.unicen.edu.ar/' },
     { src: '/uncoma-audeas.jpg', url: 'https://facaweb.uncoma.edu.ar/' },
+    { src: '/unc-audeas.jpg', url: 'https://agro.unc.edu.ar/' },
+    { src: '/uncuyo-audeas.jpg', url: 'https://fca.uncuyo.edu.ar/' },
+    { src: '/uner-audeas.jpg', url: 'https://fca.uner.edu.ar/' },
+    { src: '/unf-audeas.jpg', url: 'https://frn.unf.edu.ar/' },
+    { src: '/unju-audeas.jpg', url: 'https://www.fca.unju.edu.ar/' },
+    { src: '/unlpam-audeas.jpg', url: 'https://www.agro.unlpam.edu.ar' },
+    { src: '/unlp-audeas.jpg', url: 'https://www.agro.unlp.edu.ar/' },
+    {
+      src: '/unlar-audeas.jpg',
+      url: 'https://www.unlar.edu.ar/index.php/unlar/departamentos-academicos/ciencias-y-tecnologias-aplicadas-a-la-produccion-al-ambiente-y-al-urbanismo',
+    },
+    {
+      src: '/undec-audeas.jpg',
+      url: 'https://www.undec.edu.ar/ingenieria-agronomica/',
+    },
+    { src: '/unicen-azul-audeas.jpg', url: 'https://www.faa.unicen.edu.ar/' },
     { src: '/uncpba-audeas.jpg', url: '#' },
     { src: '/uner-audeas.jpg', url: 'https://fca.uner.edu.ar/' },
     { src: '/unr-audeas.png', url: 'https://fcagr.unr.edu.ar/' },
