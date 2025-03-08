@@ -25,7 +25,7 @@ export default function CarouselSpacing() {
     { src: '/partners/unf-audeas.jpg', url: 'https://frn.unf.edu.ar/' },
     { src: '/partners/unju-audeas.jpg', url: 'https://www.fca.unju.edu.ar/' },
     {
-      src: '/partners/unlpam-audeas.jpg',
+      src: '/partners/unlpam-audeas.png',
       url: 'https://www.agro.unlpam.edu.ar',
     },
     { src: '/partners/unlp-audeas.jpg', url: 'https://www.agro.unlp.edu.ar/' },
@@ -37,6 +37,7 @@ export default function CarouselSpacing() {
       src: '/partners/undec-audeas.jpg',
       url: 'https://www.undec.edu.ar/ingenieria-agronomica/',
     },
+    { src: '/partners/unl-audeas.png', url: 'https://www.fca.unl.edu.ar/' },
     {
       src: '/partners/unicen-azul-audeas.jpg',
       url: 'https://www.faa.unicen.edu.ar/',
