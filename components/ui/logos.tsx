@@ -45,6 +45,11 @@ export default function CarouselSpacing() {
     { src: '/partners/uncpba-audeas.jpg', url: '#' },
     { src: '/partners/uner-audeas.jpg', url: 'https://fca.uner.edu.ar/' },
     { src: '/partners/unr-audeas.png', url: 'https://fcagr.unr.edu.ar/' },
+    { src: '/partners/unlz-audeas.png', url: 'https://agrarias.unlz.edu.ar/' },
+    {
+      src: '/partners/unlu-audeas.png',
+      url: 'https://www.unlu.edu.ar/dpto-tecnologia.html',
+    },
   ]
 
   return (
