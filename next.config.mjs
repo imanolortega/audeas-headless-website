@@ -29,6 +29,9 @@ const nextConfig = {
       {
         hostname: 'keystoneacademic-res.cloudinary.com',
       },
+      {
+        hostname: 'adminaudeas.com',
+      },
     ],
   },
 }
