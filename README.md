@@ -1,14 +1,41 @@
 # Audeas Headless Website
 
+Sitio institucional de AUDEAS (Asociación Universitaria de Educación Agropecuaria Superior), desarrollado con enfoque headless utilizando Next.js como frontend y WordPress como CMS.
 
-Next.js application that fetches data from a WordPress site using the WordPress REST API. The template includes functions for fetching posts, categories, tags, authors, and featured media from a WordPress site and rendering them in a Next.js application.
+🔗 [Sitio en producción](https://www.audeas.com.ar)
 
+## Tecnologías principales
 
-Built with [Next.js 14](https://nextjs.org/docs), [React](https://react.dev/), [Typescript](https://www.typescriptlang.org/docs/), [Tailwind](https://tailwindcss.com/), [shadcn/ui](https://ui.shadcn.com/docs), and [brijr/craft](https://github.com/brijr/craft). It pairs nicely with [brijr/components](https://components.bridger.to/) for a rapid development experience. Built by [9d8](https://9d8.dev).
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- ShadCN/UI
+- WordPress REST API
+- PhotoSwipe (galería de imágenes)
+- React Hook Form (formularios)
 
-### ENV
+## 🚀 Instalación local
+
+``` bash
+
+git clone https://github.com/imanolortega/audeas-headless-website.git
+cd audeas-headless-website
+npm install
+
+```
+
+Crear un archivo .env.local con las siguientes variables:
 
 ```bash
 WORDPRESS_URL="https://wordpress.com"
 WORDPRESS_HOSTNAME="wordpress.com"
 ```
+
+Luego iniciar el entorno de desarrollo:
+
+``` bash
+
+npm run dev
+
+```
+
