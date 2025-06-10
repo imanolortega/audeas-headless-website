@@ -1,7 +1,7 @@
 import { Section, Container } from '@/components/craft'
 import Balancer from 'react-wrap-balancer'
 
-import { getAllPosts, getPageBySlug } from '@/lib/wordpress'
+import { getAllPosts } from '@/lib/wordpress'
 
 import { homeGridData } from '@/lib/data'
 import { IconGrid } from '@/components/icon-grid/icon-grid'
@@ -12,7 +12,6 @@ import Logos from '@/components/logos/logos'
 
 export default async function Home() {
   const posts = await getAllPosts()
-  const page = await getPageBySlug('home')
 
   return (
     <>
@@ -42,7 +41,7 @@ const LatestsPost = ({ posts }: { posts: any }) => {
         </Balancer>
       </h2>
       <div className="grid md:grid-cols-3 gap-4 z-0">
-        {posts.map((post: any) => (
+        {posts.slice(0, 6).map((post: any) => (
           <PostCard key={post.id} post={post} />
         ))}
       </div>
