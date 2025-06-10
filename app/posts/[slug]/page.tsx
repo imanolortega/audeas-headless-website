@@ -1,11 +1,10 @@
 import {
   getPostBySlug,
   getFeaturedMediaById,
-  getAuthorById,
   getCategoryById,
 } from '@/lib/wordpress'
 
-import { Section, Container, Article, Main } from '@/components/craft'
+import { Section, Container, Article } from '@/components/craft'
 import { Metadata } from 'next'
 import { badgeVariants } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
@@ -20,9 +19,42 @@ export async function generateMetadata({
   params: { slug: string }
 }): Promise<Metadata> {
   const post = await getPostBySlug(params.slug)
+  const featuredMedia = await getFeaturedMediaById(post.featured_media)
+
+  const title = post.title.rendered.replace(/(<([^>]+)>)/gi, '')
+  const description = post.excerpt.rendered.replace(/(<([^>]+)>)/gi, '')
+  const image = featuredMedia?.source_url || ''
+  const url = `https://www.audeas.com.ar/posts/${params.slug}`
+
   return {
-    title: post.title.rendered,
-    description: post.excerpt.rendered,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url,
+      type: 'article',
+      publishedTime: post.date,
+      images: [
+        {
+          url: image,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [image],
+    },
+    alternates: {
+      canonical: url,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
   }
 }
 

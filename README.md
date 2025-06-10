@@ -16,7 +16,7 @@ Sitio institucional de AUDEAS (Asociación Universitaria de Educación Agropecua
 
 ## 🚀 Instalación local
 
-``` bash
+```bash
 
 git clone https://github.com/imanolortega/audeas-headless-website.git
 cd audeas-headless-website
@@ -33,9 +33,8 @@ WORDPRESS_HOSTNAME="wordpress.com"
 
 Luego iniciar el entorno de desarrollo:
 
-``` bash
+```bash
 
 npm run dev
 
 ```
-
