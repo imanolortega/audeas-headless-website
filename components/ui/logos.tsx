@@ -1,13 +1,13 @@
-import { Card, CardContent } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel'
-import Image from 'next/image'
-import Link from 'next/link'
+} from '@/components/ui/carousel';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function CarouselSpacing() {
   const images = [
@@ -105,7 +105,7 @@ export default function CarouselSpacing() {
       src: '/partners/unmdp-audeas.jpg',
       url: 'https://agrarias.campus.mdp.edu.ar/',
     },
-  ]
+  ];
 
   return (
     <Carousel
@@ -146,5 +146,5 @@ export default function CarouselSpacing() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
-  )
+  );
 }

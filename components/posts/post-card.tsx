@@ -1,23 +1,19 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { Post } from '@/lib/wordpress.d'
-import { cn } from '@/lib/utils'
+import { Post } from '@/lib/wordpress.d';
+import { cn } from '@/lib/utils';
 
-import {
-  getFeaturedMediaById,
-  getAuthorById,
-  getCategoryById,
-} from '@/lib/wordpress'
+import { getFeaturedMediaById, getAuthorById, getCategoryById } from '@/lib/wordpress';
 
 export default async function PostCard({ post }: { post: Post }) {
-  const media = await getFeaturedMediaById(post.featured_media)
+  const media = await getFeaturedMediaById(post.featured_media);
   const date = new Date(post.date).toLocaleDateString('es-AR', {
     month: 'long',
     day: 'numeric',
     year: 'numeric',
-  })
-  const category = await getCategoryById(post.categories[0])
+  });
+  const category = await getCategoryById(post.categories[0]);
 
   return (
     <Link
@@ -44,9 +40,7 @@ export default async function PostCard({ post }: { post: Post }) {
         <div
           className="text-sm"
           dangerouslySetInnerHTML={{
-            __html:
-              post.excerpt.rendered.split(' ').slice(0, 12).join(' ').trim() +
-              '...',
+            __html: post.excerpt.rendered.split(' ').slice(0, 12).join(' ').trim() + '...',
           }}
         ></div>
       </div>
@@ -59,5 +53,5 @@ export default async function PostCard({ post }: { post: Post }) {
         </div>
       </div>
     </Link>
-  )
+  );
 }

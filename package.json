@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "npx @biomejs/biome format --write ."
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

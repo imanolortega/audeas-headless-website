@@ -1,7 +1,7 @@
-import { Section, Container } from '@/components/craft'
-import BackButton from '@/components/back'
+import { Section, Container } from '@/components/craft';
+import BackButton from '@/components/back';
 
-import Logos from '@/components/logos/logos'
+import Logos from '@/components/logos/logos';
 
 export default async function Page() {
   return (
@@ -14,5 +14,5 @@ export default async function Page() {
         <Logos showTitle={false} />
       </Container>
     </Section>
-  )
+  );
 }

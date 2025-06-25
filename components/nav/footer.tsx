@@ -1,11 +1,11 @@
-import { Container, Section } from '../craft'
+import { Container, Section } from '../craft';
 
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 
-import Logo from '@/public/home-logo-audeas.png'
-import { contentMenu, mainMenu } from '@/menu.config'
-import { getMenuBySlug } from '@/lib/wordpress'
+import Logo from '@/public/home-logo-audeas.png';
+import { contentMenu, mainMenu } from '@/menu.config';
+import { getMenuBySlug } from '@/lib/wordpress';
 
 export const Footer = async () => {
   // const mainMenu = await getMenuBySlug('main')
@@ -30,11 +30,7 @@ export const Footer = async () => {
           <div className="flex flex-col gap-2 text-sm">
             <h4 className="font-medium text-base">Nosotros</h4>
             {Object.entries(mainMenu).map(([key, href]) => (
-              <Link
-                className="hover:underline underline-offset-4"
-                key={href}
-                href={href}
-              >
+              <Link className="hover:underline underline-offset-4" key={href} href={href}>
                 {key.charAt(0).toUpperCase() + key.slice(1)}
               </Link>
             ))}
@@ -42,22 +38,16 @@ export const Footer = async () => {
           <div className="flex flex-col gap-2 text-sm">
             <h4 className="font-medium text-base">Información</h4>
             {Object.entries(contentMenu).map(([key, href]) => (
-              <Link
-                className="hover:underline underline-offset-4"
-                key={href}
-                href={href}
-              >
+              <Link className="hover:underline underline-offset-4" key={href} href={href}>
                 {key.charAt(0).toUpperCase() + key.slice(1)}
               </Link>
             ))}
           </div>
         </Container>
         <Container className="border-t border-audeas not-prose flex flex-col md:flex-row md:gap-2 gap-6 justify-end md:items-center">
-          <p className="text-muted-foreground">
-            © 2024. Audeas | Asociación Civil
-          </p>
+          <p className="text-muted-foreground">© 2024. Audeas | Asociación Civil</p>
         </Container>
       </Section>
     </footer>
-  )
-}
+  );
+};

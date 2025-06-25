@@ -1,7 +1,7 @@
-import { contentsGridData } from '@/lib/data'
-import { IconGrid } from '@/components/icon-grid/icon-grid'
-import { Section, Container } from '@/components/craft'
-import BackButton from '@/components/back'
+import { contentsGridData } from '@/lib/data';
+import { IconGrid } from '@/components/icon-grid/icon-grid';
+import { Section, Container } from '@/components/craft';
+import BackButton from '@/components/back';
 
 export default async function Page() {
   return (
@@ -14,5 +14,5 @@ export default async function Page() {
         <IconGrid iconGridData={contentsGridData} />
       </Container>
     </Section>
-  )
+  );
 }

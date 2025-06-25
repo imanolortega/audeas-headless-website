@@ -1,26 +1,26 @@
-'use client'
+'use client';
 
 // React and Next Imports
-import * as React from 'react'
-import Link, { LinkProps } from 'next/link'
-import { useRouter } from 'next/navigation'
-import Image from 'next/image'
+import * as React from 'react';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 // Utility Imports
-import { Menu, ArrowRightSquare } from 'lucide-react'
-import { cn } from '@/lib/utils'
-import Logo from '@/public/home-logo-audeas.png'
+import { Menu, ArrowRightSquare } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import Logo from '@/public/home-logo-audeas.png';
 
 // Component Imports
-import { Button } from '@/components/ui/button'
-import { ScrollArea } from '@/components/ui/scroll-area'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { Separator } from '@/components/ui/separator'
+import { Button } from '@/components/ui/button';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Separator } from '@/components/ui/separator';
 
-import { mainMenu, contentMenu } from '@/menu.config'
+import { mainMenu, contentMenu } from '@/menu.config';
 
 export function MobileNav() {
-  const [open, setOpen] = React.useState(false)
+  const [open, setOpen] = React.useState(false);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -34,11 +34,7 @@ export function MobileNav() {
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="pr-0">
-        <MobileLink
-          href="/"
-          className="flex items-center"
-          onOpenChange={setOpen}
-        >
+        <MobileLink href="/" className="flex items-center" onOpenChange={setOpen}>
           <Image src={Logo} alt="Logo" width={175} height={80} />
         </MobileLink>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
@@ -61,34 +57,28 @@ export function MobileNav() {
         </ScrollArea>
       </SheetContent>
     </Sheet>
-  )
+  );
 }
 
 interface MobileLinkProps extends LinkProps {
-  onOpenChange?: (open: boolean) => void
-  children: React.ReactNode
-  className?: string
+  onOpenChange?: (open: boolean) => void;
+  children: React.ReactNode;
+  className?: string;
 }
 
-function MobileLink({
-  href,
-  onOpenChange,
-  className,
-  children,
-  ...props
-}: MobileLinkProps) {
-  const router = useRouter()
+function MobileLink({ href, onOpenChange, className, children, ...props }: MobileLinkProps) {
+  const router = useRouter();
   return (
     <Link
       href={href}
       onClick={() => {
-        router.push(href.toString())
-        onOpenChange?.(false)
+        router.push(href.toString());
+        onOpenChange?.(false);
       }}
       className={cn('text-lg', className)}
       {...props}
     >
       {children}
     </Link>
-  )
+  );
 }

@@ -5,7 +5,7 @@ import {
   Handshake,
   Megaphone,
   Newspaper,
-} from 'lucide-react'
+} from 'lucide-react';
 
 export const homeGridData = [
   {
@@ -17,15 +17,13 @@ export const homeGridData = [
   {
     icon: Handshake,
     title: 'Relaciones Institucionales',
-    description:
-      'Nuestros convenios con Instituciones Universitarias de Argentina',
+    description: 'Nuestros convenios con Instituciones Universitarias de Argentina',
     href: '/pages/convenios',
   },
   {
     icon: GraduationCap,
     title: 'Posgrados',
-    description:
-      'Promovemos el desarrollo y articulación de carreras de posgrado',
+    description: 'Promovemos el desarrollo y articulación de carreras de posgrado',
     href: '/pages/posgrados',
   },
   {
@@ -46,7 +44,7 @@ export const homeGridData = [
     description: 'Estatutos vigentes y pasados de nuestra institución',
     href: '/pages/estatutos',
   },
-]
+];
 
 export const contentsGridData = [
   {
@@ -67,7 +65,7 @@ export const contentsGridData = [
     description: 'Estatutos vigentes y pasados de nuestra institución',
     href: '/pages/estatutos',
   },
-]
+];
 
 export const slidesData = [
   {
@@ -94,4 +92,4 @@ export const slidesData = [
       'Funcionamos como un nexo confiable que potencia la Educación Agropecuaria y Forestal, agrupando a Universidades oficialmente reconocidas en nuestro país',
     src: '/carousel/audeas-carousel-four.jpg',
   },
-]
+];

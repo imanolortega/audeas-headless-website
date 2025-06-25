@@ -1,8 +1,8 @@
-import * as React from 'react'
-import Image from 'next/image'
+import * as React from 'react';
+import Image from 'next/image';
 
-import { Section, Container } from '@/components/craft'
-import { Card, CardContent } from '@/components/ui/card'
+import { Section, Container } from '@/components/craft';
+import { Card, CardContent } from '@/components/ui/card';
 
 import {
   Carousel,
@@ -10,9 +10,9 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel'
-import Balancer from 'react-wrap-balancer'
-import { slidesData } from '@/lib/data'
+} from '@/components/ui/carousel';
+import Balancer from 'react-wrap-balancer';
+import { slidesData } from '@/lib/data';
 
 const FeatureNine = () => {
   return (
@@ -52,7 +52,7 @@ const FeatureNine = () => {
         </Carousel>
       </Container>
     </Section>
-  )
-}
+  );
+};
 
-export default FeatureNine
+export default FeatureNine;

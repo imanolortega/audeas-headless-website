@@ -1,18 +1,18 @@
-import { getAllTags } from '@/lib/wordpress'
-import { Section, Container } from '@/components/craft'
-import { Metadata } from 'next'
-import Link from 'next/link'
-import BackButton from '@/components/back'
+import { getAllTags } from '@/lib/wordpress';
+import { Section, Container } from '@/components/craft';
+import { Metadata } from 'next';
+import Link from 'next/link';
+import BackButton from '@/components/back';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Todas las etiquetas',
     description: 'Explorar todas las etiquetas en el sitio.',
-  }
+  };
 }
 
 export default async function Page() {
-  const tags = await getAllTags()
+  const tags = await getAllTags();
 
   return (
     <Section>
@@ -28,5 +28,5 @@ export default async function Page() {
         </div>
       </Container>
     </Section>
-  )
+  );
 }

@@ -1,12 +1,12 @@
-import Image from 'next/image'
-import { cn } from '@/lib/utils'
+import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 interface Person {
-  image: string
-  name: string
-  role: string
-  size: string
-  description?: string
+  image: string;
+  name: string;
+  role: string;
+  size: string;
+  description?: string;
 }
 
 export default function PersonCard({ person }: { person: Person }) {
@@ -37,5 +37,5 @@ export default function PersonCard({ person }: { person: Person }) {
         </div>
       </div>
     </div>
-  )
+  );
 }

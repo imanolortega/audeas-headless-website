@@ -1,9 +1,9 @@
-import { getAllPages } from '@/lib/wordpress'
-import { Section, Container } from '@/components/craft'
-import Link from 'next/link'
+import { getAllPages } from '@/lib/wordpress';
+import { Section, Container } from '@/components/craft';
+import Link from 'next/link';
 
 export default async function Page() {
-  const pages = await getAllPages()
+  const pages = await getAllPages();
 
   return (
     <Section>
@@ -19,5 +19,5 @@ export default async function Page() {
         </div>
       </Container>
     </Section>
-  )
+  );
 }

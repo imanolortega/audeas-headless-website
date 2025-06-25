@@ -6,16 +6,16 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table'
-import Link from 'next/link'
+} from '@/components/ui/table';
+import Link from 'next/link';
 
 interface TableProps {
   data: Array<{
-    año: string
-    cantidad: string
-    link: string
-  }>
-  caption: string
+    año: string;
+    cantidad: string;
+    link: string;
+  }>;
+  caption: string;
 }
 
 export function TableDemo({ data, caption }: TableProps) {
@@ -35,15 +35,11 @@ export function TableDemo({ data, caption }: TableProps) {
             <TableCell className="font-medium">{item.año}</TableCell>
             <TableCell>{item.cantidad}</TableCell>
             <TableCell className="text-right">
-              <Link
-                href={item.link.startsWith('/') ? item.link : `/${item.link}`}
-              >
-                Ver más
-              </Link>
+              <Link href={item.link.startsWith('/') ? item.link : `/${item.link}`}>Ver más</Link>
             </TableCell>
           </TableRow>
         ))}
       </TableBody>
     </Table>
-  )
+  );
 }

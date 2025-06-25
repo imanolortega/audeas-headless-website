@@ -1,7 +1,7 @@
-import { Section, Container } from '@/components/craft'
-import BackButton from '@/components/back'
-import PersonCard from '@/components/persons/person-card'
-import PersonGrid from '@/components/persons-grid/person-card-grid'
+import { Section, Container } from '@/components/craft';
+import BackButton from '@/components/back';
+import PersonCard from '@/components/persons/person-card';
+import PersonGrid from '@/components/persons-grid/person-card-grid';
 
 export default async function Page() {
   const people = [
@@ -40,7 +40,7 @@ export default async function Page() {
       description: 'Región Pampeana',
       size: 'w-64 h-64',
     },
-  ]
+  ];
 
   return (
     <Section>
@@ -56,8 +56,7 @@ export default async function Page() {
               image: '/staff/myriam-villarreal.jpg',
               name: 'Dra. Myriam Villarreal',
               role: 'Presidente ',
-              description:
-                'Decana de la Facultad de Agronomía y Agroindustrias de la UNSE',
+              description: 'Decana de la Facultad de Agronomía y Agroindustrias de la UNSE',
               size: 'w-72 h-64',
             }}
           />
@@ -66,8 +65,7 @@ export default async function Page() {
               image: '/staff/jorge-dutto.jpeg',
               name: 'Ing. Jorge Dutto',
               role: 'Vicepresidente ',
-              description:
-                'Decano de la Facultad de Ciencias Agropecuarias de la UNC',
+              description: 'Decano de la Facultad de Ciencias Agropecuarias de la UNC',
               size: 'w-72 h-64',
             }}
           />
@@ -78,5 +76,5 @@ export default async function Page() {
         <PersonGrid people={people} />
       </Container>
     </Section>
-  )
+  );
 }

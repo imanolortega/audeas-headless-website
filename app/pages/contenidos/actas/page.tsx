@@ -1,6 +1,6 @@
-import { Section, Container } from '@/components/craft'
-import BackButton from '@/components/back'
-import { TableDemo } from '@/components/table/table'
+import { Section, Container } from '@/components/craft';
+import BackButton from '@/components/back';
+import { TableDemo } from '@/components/table/table';
 
 const data = [
   {
@@ -178,7 +178,7 @@ const data = [
     cantidad: '1',
     link: 'pages/contenidos/1983-descargar',
   },
-]
+];
 
 export default async function Page() {
   return (
@@ -188,11 +188,8 @@ export default async function Page() {
         <h1 className="md:pt-12 sm:pt-6">Actas</h1>
       </Container>
       <Container>
-        <TableDemo
-          data={data}
-          caption="Accedé a todas las actas desde nuestra fundación"
-        />
+        <TableDemo data={data} caption="Accedé a todas las actas desde nuestra fundación" />
       </Container>
     </Section>
-  )
+  );
 }

@@ -1,9 +1,4 @@
-import {
-  getAllPosts,
-  getAllAuthors,
-  getAllTags,
-  getAllCategories,
-} from '@/lib/wordpress'
+import { getAllPosts, getAllAuthors, getAllTags, getAllCategories } from '@/lib/wordpress';
 
 import {
   Pagination,
@@ -12,32 +7,29 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from '@/components/ui/pagination'
+} from '@/components/ui/pagination';
 
-import { Section, Container } from '@/components/craft'
-import PostCard from '@/components/posts/post-card'
-import FilterPosts from './filter'
-import BackButton from '@/components/back'
+import { Section, Container } from '@/components/craft';
+import PostCard from '@/components/posts/post-card';
+import FilterPosts from './filter';
+import BackButton from '@/components/back';
 
 export default async function Page({
   searchParams,
 }: {
-  searchParams: { [key: string]: string | undefined }
+  searchParams: { [key: string]: string | undefined };
 }) {
-  const { author, tag, category, page: pageParam } = searchParams
-  const posts = await getAllPosts({ author, tag, category })
-  const authors = await getAllAuthors()
-  const tags = await getAllTags()
-  const categories = await getAllCategories()
+  const { author, tag, category, page: pageParam } = searchParams;
+  const posts = await getAllPosts({ author, tag, category });
+  const authors = await getAllAuthors();
+  const tags = await getAllTags();
+  const categories = await getAllCategories();
 
-  const page = pageParam ? parseInt(pageParam, 10) : 1
-  const postsPerPage = 9
-  const totalPages = Math.ceil(posts.length / postsPerPage)
+  const page = pageParam ? parseInt(pageParam, 10) : 1;
+  const postsPerPage = 9;
+  const totalPages = Math.ceil(posts.length / postsPerPage);
 
-  const paginatedPosts = posts.slice(
-    (page - 1) * postsPerPage,
-    page * postsPerPage,
-  )
+  const paginatedPosts = posts.slice((page - 1) * postsPerPage, page * postsPerPage);
 
   return (
     <Section>
@@ -75,26 +67,18 @@ export default async function Page({
                   className={page === 1 ? 'pointer-events-none text-muted' : ''}
                   href={`/posts?page=${Math.max(page - 1, 1)}${
                     category ? `&category=${category}` : ''
-                  }${author ? `&author=${author}` : ''}${
-                    tag ? `&tag=${tag}` : ''
-                  }`}
+                  }${author ? `&author=${author}` : ''}${tag ? `&tag=${tag}` : ''}`}
                 />
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href={`/posts?page=${page}`}>
-                  {page}
-                </PaginationLink>
+                <PaginationLink href={`/posts?page=${page}`}>{page}</PaginationLink>
               </PaginationItem>
               <PaginationItem>
                 <PaginationNext
-                  className={
-                    page === totalPages ? 'pointer-events-none text-muted' : ''
-                  }
+                  className={page === totalPages ? 'pointer-events-none text-muted' : ''}
                   href={`/posts?page=${Math.min(page + 1, totalPages)}${
                     category ? `&category=${category}` : ''
-                  }${author ? `&author=${author}` : ''}${
-                    tag ? `&tag=${tag}` : ''
-                  }`}
+                  }${author ? `&author=${author}` : ''}${tag ? `&tag=${tag}` : ''}`}
                 />
               </PaginationItem>
             </PaginationContent>
@@ -102,5 +86,5 @@ export default async function Page({
         </div>
       </Container>
     </Section>
-  )
+  );
 }

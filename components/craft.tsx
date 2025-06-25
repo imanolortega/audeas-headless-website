@@ -1,18 +1,18 @@
-import * as React from 'react'
+import * as React from 'react';
 
 // cn util
-import { type ClassValue, clsx } from 'clsx'
-import { twMerge } from 'tailwind-merge'
+import { type ClassValue, clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
 
 // Layout Component
 type LayoutProps = {
-  children: React.ReactNode
-  className?: string
-}
+  children: React.ReactNode;
+  className?: string;
+};
 
 const Layout = ({ children, className }: LayoutProps) => {
   return (
@@ -23,15 +23,15 @@ const Layout = ({ children, className }: LayoutProps) => {
     >
       {children}
     </html>
-  )
-}
+  );
+};
 
 // Main Component
 type MainProps = {
-  children: React.ReactNode
-  className?: string
-  id?: string
-}
+  children: React.ReactNode;
+  className?: string;
+  id?: string;
+};
 
 const Main = ({ children, className, id }: MainProps) => {
   return (
@@ -59,53 +59,48 @@ const Main = ({ children, className, id }: MainProps) => {
     >
       {children}
     </main>
-  )
-}
+  );
+};
 
 // Section Component
 type SectionProps = {
-  children: React.ReactNode
-  className?: string
-  id?: string
-}
+  children: React.ReactNode;
+  className?: string;
+  id?: string;
+};
 
 const Section = ({ children, className, id }: SectionProps) => {
   return (
     <section className={cn('py-8 md:py-12 fade-in', className)} id={id}>
       {children}
     </section>
-  )
-}
+  );
+};
 
 // Container Component
 type ContainerProps = {
-  children: React.ReactNode
-  className?: string
-  id?: string
-}
+  children: React.ReactNode;
+  className?: string;
+  id?: string;
+};
 
 const Container = ({ children, className, id }: ContainerProps) => {
   return (
     <div className={cn('mx-auto max-w-5xl', 'p-6 sm:p-8', className)} id={id}>
       {children}
     </div>
-  )
-}
+  );
+};
 
 // Article Component
 type ArticleProps = {
-  children?: React.ReactNode
-  className?: string
-  id?: string
-  dangerouslySetInnerHTML?: { __html: string }
-}
+  children?: React.ReactNode;
+  className?: string;
+  id?: string;
+  dangerouslySetInnerHTML?: { __html: string };
+};
 
-const Article = ({
-  children,
-  className,
-  id,
-  dangerouslySetInnerHTML,
-}: ArticleProps) => {
+const Article = ({ children, className, id, dangerouslySetInnerHTML }: ArticleProps) => {
   return (
     <article
       dangerouslySetInnerHTML={dangerouslySetInnerHTML}
@@ -134,7 +129,7 @@ const Article = ({
     >
       {children}
     </article>
-  )
-}
+  );
+};
 
-export { Layout, Main, Section, Container, Article }
+export { Layout, Main, Section, Container, Article };
