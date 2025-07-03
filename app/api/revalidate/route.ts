@@ -18,9 +18,9 @@ export async function POST(req: NextRequest) {
     await revalidatePath(`/posts/${slug}`);
 
     // Revalidate pages
-    await revalidatePath(`/autoridades`);
-    await revalidatePath(`/contenidos`);
-    await revalidatePath(`/socios`);
+    await revalidatePath(`/pages/autoridades`);
+    await revalidatePath(`/pages/contenidos`);
+    await revalidatePath(`/pages/socios`);
 
     // Revalidate home
     await revalidatePath(`/`);
