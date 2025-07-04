@@ -1,4 +1,8 @@
-import { getPostBySlug, getFeaturedMediaById, getCategoryById } from '@/lib/wordpress';
+import {
+  getPostBySlug,
+  getFeaturedMediaById,
+  getCategoryById,
+} from '@/lib/wordpress';
 
 import { Section, Container, Article } from '@/components/craft';
 import { Metadata } from 'next';
@@ -72,7 +76,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
       <Container>
         <h1>
           <Balancer>
-            <span dangerouslySetInnerHTML={{ __html: post.title.rendered }}></span>
+            <span
+              dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+            ></span>
           </Balancer>
         </h1>
         <div className="flex justify-between items-center gap-4 text-sm mb-4">
@@ -86,9 +92,16 @@ export default async function Page({ params }: { params: { slug: string } }) {
         </div>
         <div className="h-96 my-10 md:h-[560px] overflow-hidden flex items-center justify-center border rounded-lg bg-accent/25">
           {/* eslint-disable-next-line */}
-          <img className="w-full" src={featuredMedia.source_url} alt={post.title.rendered} />
+          <img
+            className="w-full"
+            src={featuredMedia.source_url}
+            alt={post.title.rendered}
+          />
         </div>
-        <Article className="m-auto" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+        <Article
+          className="m-auto"
+          dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+        />
       </Container>
     </Section>
   );

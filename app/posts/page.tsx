@@ -1,4 +1,9 @@
-import { getAllPosts, getAllAuthors, getAllTags, getAllCategories } from '@/lib/wordpress';
+import {
+  getAllPosts,
+  getAllAuthors,
+  getAllTags,
+  getAllCategories,
+} from '@/lib/wordpress';
 
 import {
   Pagination,
@@ -29,7 +34,10 @@ export default async function Page({
   const postsPerPage = 9;
   const totalPages = Math.ceil(posts.length / postsPerPage);
 
-  const paginatedPosts = posts.slice((page - 1) * postsPerPage, page * postsPerPage);
+  const paginatedPosts = posts.slice(
+    (page - 1) * postsPerPage,
+    page * postsPerPage,
+  );
 
   return (
     <Section>
@@ -71,11 +79,15 @@ export default async function Page({
                 />
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href={`/posts?page=${page}`}>{page}</PaginationLink>
+                <PaginationLink href={`/posts?page=${page}`}>
+                  {page}
+                </PaginationLink>
               </PaginationItem>
               <PaginationItem>
                 <PaginationNext
-                  className={page === totalPages ? 'pointer-events-none text-muted' : ''}
+                  className={
+                    page === totalPages ? 'pointer-events-none text-muted' : ''
+                  }
                   href={`/posts?page=${Math.min(page + 1, totalPages)}${
                     category ? `&category=${category}` : ''
                   }${author ? `&author=${author}` : ''}${tag ? `&tag=${tag}` : ''}`}

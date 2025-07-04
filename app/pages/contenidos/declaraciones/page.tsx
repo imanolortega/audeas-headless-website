@@ -34,7 +34,10 @@ export default async function Page() {
         <h1 className="md:pt-12">Declaraciones</h1>
       </Container>
       <Container>
-        <TableDemo data={data} caption="Declaraciones para descargar de los últimos años" />
+        <TableDemo
+          data={data}
+          caption="Declaraciones para descargar de los últimos años"
+        />
       </Container>
     </Section>
   );

@@ -188,7 +188,10 @@ export default async function Page() {
         <h1 className="md:pt-12 sm:pt-6">Actas</h1>
       </Container>
       <Container>
-        <TableDemo data={data} caption="Accedé a todas las actas desde nuestra fundación" />
+        <TableDemo
+          data={data}
+          caption="Accedé a todas las actas desde nuestra fundación"
+        />
       </Container>
     </Section>
   );

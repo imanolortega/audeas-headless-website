@@ -35,11 +35,17 @@ export const metadata: Metadata = {
 
 export const revalidate = 3600;
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={cn('min-h-screen font-sans antialiased', fontSans.variable)}>
+      <body
+        className={cn('min-h-screen font-sans antialiased', fontSans.variable)}
+      >
         <TopNav />
         <Nav />
         <Main>{children}</Main>

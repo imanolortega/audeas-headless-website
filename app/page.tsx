@@ -36,7 +36,9 @@ const LatestsPost = ({ posts }: { posts: any }) => {
   return (
     <>
       <h2 className="text-center">
-        <Balancer className="font-semibold text-center">Últimas Noticias</Balancer>
+        <Balancer className="font-semibold text-center">
+          Últimas Noticias
+        </Balancer>
       </h2>
       <div className="grid md:grid-cols-3 gap-4 z-0">
         {posts.slice(0, 6).map((post: any) => (
