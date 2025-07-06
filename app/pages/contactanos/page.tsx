@@ -59,7 +59,7 @@ export default function Page() {
   return (
     <Section>
       <Container>
-        <h1 className="text-2xl font-bold mb-4">Contáctanos</h1>
+        <h1 className="text-2xl font-bold mb-4">Contactanos</h1>
         {isSent ? (
           <div className="p-4 bg-green-100 text-green-700 rounded">
             Mensaje enviado correctamente.
