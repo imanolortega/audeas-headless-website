@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { Section, Container } from '@/components/craft'
+import { Section, Container } from '@/components/craft';
 import {
   Form,
   FormField,
@@ -9,24 +9,24 @@ import {
   FormControl,
   FormMessage,
   FormDescription,
-} from '@/components/ui/form'
-import { Button } from '@/components/ui/button'
-import { useForm } from 'react-hook-form'
-import { z } from 'zod'
-import { zodResolver } from '@hookform/resolvers/zod'
+} from '@/components/ui/form';
+import { Button } from '@/components/ui/button';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'El nombre es obligatorio'),
   email: z.string().email('Correo inválido'),
   message: z.string().min(5, 'El mensaje es obligatorio'),
-})
+});
 
-type ContactFormValues = z.infer<typeof contactSchema>
+type ContactFormValues = z.infer<typeof contactSchema>;
 
 export default function Page() {
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
-  })
+  });
 
   const onSubmit = async (data: ContactFormValues) => {
     try {
@@ -36,19 +36,19 @@ export default function Page() {
         headers: {
           'Content-Type': 'application/json',
         },
-      })
+      });
 
       if (res.ok) {
-        alert('Mensaje enviado con éxito')
-        form.reset()
+        alert('Mensaje enviado con éxito');
+        form.reset();
       } else {
-        alert('Hubo un problema al enviar el mensaje')
+        alert('Hubo un problema al enviar el mensaje');
       }
     } catch (err) {
-      console.error(err)
-      alert('Error de red')
+      console.error(err);
+      alert('Error de red');
     }
-  }
+  };
 
   return (
     <Section>
@@ -116,10 +116,15 @@ export default function Page() {
               )}
             />
 
-            <Button className='bg-audeas hover:bg-audeas/95 text-base' type="submit">Enviar</Button>
+            <Button
+              className="bg-audeas hover:bg-audeas/95 text-base"
+              type="submit"
+            >
+              Enviar
+            </Button>
           </form>
         </Form>
       </Container>
     </Section>
-  )
+  );
 }
