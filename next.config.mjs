@@ -32,6 +32,9 @@ const nextConfig = {
       {
         hostname: 'adminaudeas.com',
       },
+      {
+        hostname: 'palevioletred-butterfly-414691.hostingersite.com',
+      }
     ],
   },
 };

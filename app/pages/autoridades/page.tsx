@@ -53,21 +53,21 @@ export default async function Page() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center mx-auto px-4">
           <PersonCard
             person={{
-              image: '/staff/myriam-villarreal.jpg',
-              name: 'Dra. Myriam Villarreal',
+              image: '/staff/jorge-dutto.jpg',
+              name: 'Ing. Agr. Esp. Jorge Dutto',
               role: 'Presidente ',
               description:
-                'Decana de la Facultad de Agronomía y Agroindustrias de la UNSE',
+                'Decano de Facultad de Ciencias Agropecuarias - UNC',
               size: 'w-72 h-64',
             }}
           />
           <PersonCard
             person={{
-              image: '/staff/jorge-dutto.jpeg',
-              name: 'Ing. Jorge Dutto',
-              role: 'Vicepresidente ',
+              image: '/staff/palazzesi.jpg',
+              name: 'Ing. Agr. Pablo Palazzesi',
+              role: 'Vicepresidente',
               description:
-                'Decano de la Facultad de Ciencias Agropecuarias de la UNC',
+                'Decano de Facultad de Ciencias Agrarias - UNR',
               size: 'w-72 h-64',
             }}
           />
