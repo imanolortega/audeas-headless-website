@@ -53,7 +53,7 @@ export default async function Page() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center mx-auto px-4">
           <PersonCard
             person={{
-              image: '/staff/jorge-dutto.jpg',
+              image: '/staff/j-dutto.jpg',
               name: 'Ing. Agr. Esp. Jorge Dutto',
               role: 'Presidente ',
               description:
