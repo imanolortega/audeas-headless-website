@@ -53,11 +53,10 @@ export default async function Page() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center mx-auto px-4">
           <PersonCard
             person={{
-              image: '/staff/j-dutto.jpg',
+              image: '/staff/j-dutto-audeas.jpeg',
               name: 'Ing. Agr. Esp. Jorge Dutto',
               role: 'Presidente ',
-              description:
-                'Decano de Facultad de Ciencias Agropecuarias - UNC',
+              description: 'Decano de Facultad de Ciencias Agropecuarias - UNC',
               size: 'w-72 h-64',
             }}
           />
@@ -66,8 +65,7 @@ export default async function Page() {
               image: '/staff/palazzesi.jpg',
               name: 'Ing. Agr. Pablo Palazzesi',
               role: 'Vicepresidente',
-              description:
-                'Decano de Facultad de Ciencias Agrarias - UNR',
+              description: 'Decano de Facultad de Ciencias Agrarias - UNR',
               size: 'w-72 h-64',
             }}
           />
