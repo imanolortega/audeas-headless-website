@@ -53,7 +53,7 @@ export default async function Page() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center mx-auto px-4">
           <PersonCard
             person={{
-              image: '/staff/j-dutto-audeas.jpeg',
+              image: '/staff/j-dutto-unc.png',
               name: 'Ing. Agr. Esp. Jorge Dutto',
               role: 'Presidente ',
               description: 'Decano de Facultad de Ciencias Agropecuarias - UNC',
